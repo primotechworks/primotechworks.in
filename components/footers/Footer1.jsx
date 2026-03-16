@@ -46,11 +46,11 @@ export default function Footer1({ dark = false }) {
             </p>
             <div className="clearlinks">
               <strong>T.</strong>
-              <a href="tel:+18376528800">+1 837 652 8800</a>
+              <a href="tel:+916352540698">+91 63525 40698</a>
             </div>
             <div className="clearlinks">
               <strong>E.</strong>
-              <a href="mailto:ibthemes21@gmail.com">ibthemes21@gmail.com</a>
+              <a href="mailto:primotechworks@gmail.com">primotechworks@gmail.com</a>
             </div>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2">
@@ -96,7 +96,7 @@ export default function Footer1({ dark = false }) {
             <b>© IB-Themes {new Date().getFullYear()}.</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-            <b>Based in London, United Kingdom.</b>
+            <b>Based in Ahmedabad, India.</b>
             {/* Back to Top Link */}
             <div className="local-scroll float-end mt-n20 mt-sm-10">
               <a href="#top" className="link-to-top" onClick={scrollToTop}>

@@ -8,19 +8,19 @@ const sections = [
     bgImage: "/assets/images/full-width-images/section-bg-5.jpg",
     title: "Resonance Creative Studio",
     subtitle: "Maximize your online impact with our solutions.",
-    status: "Based in London, United Kingdom",
+    status: "Based in Ahmedabad, India., United Kingdom",
   },
   {
     bgImage: "/assets/images/full-width-images/section-bg-3.jpg",
     title: "Resonance Creative Studio",
     subtitle: "Grow your business with new online experience.",
-    status: "Based in London, United Kingdom",
+    status: "Based in Ahmedabad, India., United Kingdom",
   },
   {
     bgImage: "/assets/images/full-width-images/section-bg-6.jpg",
     title: "Resonance Creative Studio",
     subtitle: "Redefine your strategy for long-term success.",
-    status: "Based in London, United Kingdom",
+    status: "Based in Ahmedabad, India., United Kingdom",
   },
 ];
 

@@ -22,12 +22,12 @@ export default function Header9({ links }) {
       <div className="nav-logo-wrap position-static local-scroll">
         <a href="#top" className="logo">
           <Image
-            src="/assets/images/demo-slick/primo-techworks-logo-dark.jpg"
+            src="/assets/images/primo-techworks-banner-logo.png"
             alt="Primo Techworks Logo"
             width={106}
             height={36}
             className="light-mode-logo"
-          />  Primo Techworks
+          />
           <Image
             src="/assets/images/demo-slick/logo-white.svg"
             alt="Primo Techworks Logo"

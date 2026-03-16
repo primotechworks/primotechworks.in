@@ -78,40 +78,40 @@ export default function MainAboutPage2() {
             <div className="page-section overflow-hidden pt-0 pb-0">
               <div className="marquee marquee-style-2 no-rotate">
                 <div className="marquee-track marquee-animation-1">
-                  <div>Based in London</div>
-                  <div>Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
-                  <div aria-hidden="true">Based in London</div>
-                  <div aria-hidden="true">Since 2010</div>
+                  <div>Based in Ahmedabad, India.</div>
+                  <div>Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
+                  <div aria-hidden="true">Based in Ahmedabad, India.</div>
+                  <div aria-hidden="true">Since 2026</div>
                 </div>
               </div>
             </div>

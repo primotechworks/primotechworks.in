@@ -54,11 +54,11 @@ export default function Contact2() {
                 <h4 className="alt-features-title">Say hello</h4>
                 <div className="alt-features-descr clearlinks">
                   <div>
-                    <a href="mailto:ibthemes21@gmail.com">
-                      ibthemes21@gmail.com
+                    <a href="mailto:primotechworks@gmail.com">
+                      primotechworks@gmail.com
                     </a>
                   </div>
-                  <div>+1 837 652 8800</div>
+                  <div>+91 63525 40698</div>
                 </div>
               </div>
             </div>

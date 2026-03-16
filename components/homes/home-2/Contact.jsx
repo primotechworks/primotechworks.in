@@ -23,20 +23,20 @@ export default function Contact({ heading }) {
           </p>
           <div>
             <a
-              href="mailto:ibthemes21@gmail.com"
+              href="mailto:primotechworks@gmail.com"
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              ibthemes21@gmail.com
+              primotechworks@gmail.com
             </a>
           </div>
           <div>
             <a
-              href="tel:+18376528800"
+              href="tel:+916352540698"
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              +1 837 652 8800
+              +91 63525 40698
             </a>
           </div>
         </div>

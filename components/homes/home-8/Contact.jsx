@@ -14,14 +14,14 @@ export default function Contact() {
             <p>
               {/* Change the phone number inside and link tag and href attribute */}
               Call us:
-              <a href="tel:+18376528800" className="text-link">
-                +1 837 652 8800
+              <a href="tel:+916352540698" className="text-link">
+                +91 63525 40698
               </a>
               <br />
               {/* Change the email address inside and link tag and href attribute */}
               Say hi:
-              <a href="mailto:ibthemes21@gmail.com" className="text-link">
-                ibthemes21@gmail.com
+              <a href="mailto:primotechworks@gmail.com" className="text-link">
+                primotechworks@gmail.com
               </a>
             </p>
             <div>

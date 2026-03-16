@@ -454,7 +454,7 @@ export default function Home8({
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
                 {/* Change the email address in the href attribute */}
                 <a
-                  href="mailto:ibthemes21@gmail.com"
+                  href="mailto:primotechworks@gmail.com"
                   className="link-hover-anim align-middle"
                   data-link-animate="y"
                 >

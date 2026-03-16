@@ -71,7 +71,7 @@ export default function MainAboutPage3() {
                               <i className="mi-check" />
                             </div>
                             <div className="features-list-text">
-                              Based in London
+                              Based in Ahmedabad, India.
                             </div>
                           </div>
                           {/* End Features List Item */}

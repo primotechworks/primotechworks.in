@@ -7,10 +7,10 @@ export default function ContactDark() {
         <div className="contact-1-left bg-dark-3 border-dark light-content">
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Call Us</h3>
-            <div className="contact-1-text">+1 837 652 8800</div>
+            <div className="contact-1-text">+91 63525 40698</div>
             <div className="contact-1-link">
               {/* Change the phone number in the "href" attribute */}
-              <a href="tel:+18376528800">Call now</a>
+              <a href="tel:+916352540698">Call now</a>
             </div>
           </div>
           <hr className="contact-1-line mt-0 mb-0" />
@@ -25,11 +25,11 @@ export default function ContactDark() {
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Email</h3>
             <div className="contact-1-text text-break mb-10">
-              ibthemes21@gmail.com
+              primotechworks@gmail.com
             </div>
             <div className="contact-1-link">
               {/* Change the email address in the "href" attribute */}
-              <a href="mailto:ibthemes21@gmail.com">Say hello</a>
+              <a href="mailto:primotechworks@gmail.com">Say hello</a>
             </div>
           </div>
         </div>

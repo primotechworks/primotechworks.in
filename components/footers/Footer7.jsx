@@ -78,7 +78,7 @@ export default function Footer7() {
             <b>© IB-Themes {new Date().getFullYear()}.</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-            <b>Based in London, United Kingdom.</b>
+            <b>Based in Ahmedabad, India.</b>
             {/* Back to Top Link */}
             <div
               className="local-scroll float-end mt-n20 mt-sm-10"

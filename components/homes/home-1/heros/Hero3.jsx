@@ -76,7 +76,7 @@ export default function Hero3() {
         {/* End Scroll Down */}
         {/* Status */}
         <div className="hs-status wow fadeInUp" data-wow-offset={0}>
-          Based in London, United Kingdom
+          Based in Ahmedabad, India., United Kingdom
         </div>
         {/* End Status */}
       </div>{" "}
