@@ -56,9 +56,9 @@ export default function Hero2({ dark }) {
                 Resonance Studio
               </h2>
               <h1 className="hs-title-10 mb-40 mb-sm-20 wow fadeInUp">
-                Create a beautiful web presence
-                <span className="visually-hidden">easily, faster, smart</span>
-                <TypeWriter strings={["easily", "faster", "smart"]} />
+                Building smarter digital 
+                  <span className="visually-hidden">solutions, innovations, futures</span>
+                <TypeWriter strings={["solutions", "innovations", "futures"]} />
               </h1>
               <p
                 className="section-descr mb-50 mb-sm-40 wow fadeInUp"

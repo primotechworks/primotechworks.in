@@ -19,11 +19,11 @@ export default function Hero2() {
                   Resonance Creative Studio
                 </h2>
                 <h1 className="hs-title-8 mb-40 mb-sm-20 wow fadeInUp">
-                  Create your beautiful web presence
-                  <span className="visually-hidden">easily, fast, smart</span>
+                  Building smarter digital
+                  <span className="visually-hidden">solutions, innovations, futures</span>
                   <TypeWriter
                     colorClass=""
-                    strings={["easily", "fast", "smart"]}
+                    strings={["solutions", "innovations", "futures"]}
                   />
                 </h1>
                 <p

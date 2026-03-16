@@ -74,11 +74,11 @@ export default function Hero3() {
                 Resonance Web Studio
               </h2>
               <h1 className="hs-title-9 mb-30 wow fadeInUp">
-                Make your beautiful web presence
-                <span className="visually-hidden">easily, fast, smart</span>
+                Building smarter digital
+                  <span className="visually-hidden">solutions, innovations, futures</span>
                 <span
                   data-period={3250}
-                  data-type='[ "easily", "fast", "smart"]'
+                  data-type='[ "solutions", "innovations", "futures"]'
                   className="typewrite color-secondary-1"
                   aria-hidden="true"
                 />

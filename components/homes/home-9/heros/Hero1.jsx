@@ -13,10 +13,10 @@ export default function Hero1() {
             <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-0 d-flex align-items-center mb-md-60 mb-sm-30">
               <div className="w-100 text-center text-lg-start">
                 <h1 className="hs-title-10 mb-40 mb-sm-20 wow fadeInUp">
-                  Create your beautiful web presence
-                  <span className="visually-hidden">easily, faster, smart</span>
+                  Building smarter digital
+                  <span className="visually-hidden">solutions, innovations, futures</span>
                   <TypeWriter
-                    strings={["easily", "faster", "smart"]}
+                    strings={["solutions", "innovations", "futures"]}
                     colorClass="color-primary-1"
                   />
                 </h1>
