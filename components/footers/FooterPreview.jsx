@@ -32,7 +32,7 @@ export default function FooterPreview() {
           </p>
           <div className="clearlinks">
             <strong>T.</strong>
-            <a href="tel:+916352540698">+91 63525 40698</a>
+            <a href="tel:+916352540698">+91 98490 21468</a>
           </div>
           <div className="clearlinks">
             <strong>E.</strong>

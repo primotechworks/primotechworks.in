@@ -7,7 +7,7 @@ export default function ContactDark() {
         <div className="contact-1-left bg-dark-3 border-dark light-content">
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Call Us</h3>
-            <div className="contact-1-text">+91 63525 40698</div>
+            <div className="contact-1-text">+91 98490 21468</div>
             <div className="contact-1-link">
               {/* Change the phone number in the "href" attribute */}
               <a href="tel:+916352540698">Call now</a>
@@ -16,7 +16,7 @@ export default function ContactDark() {
           <hr className="contact-1-line mt-0 mb-0" />
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Address</h3>
-            <div className="contact-1-text mb-10">245 Quigley Blvd, Ste K</div>
+            <div className="contact-1-text mb-10">Panchgini Apartments, Ramdevnagar, Satellite, Ahmedabad, Gujarat 380015</div>
             <div className="contact-1-link">
               <a href="#">See map</a>
             </div>

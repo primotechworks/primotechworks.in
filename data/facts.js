@@ -64,28 +64,28 @@ export const numberItems3 = [
     offset: "offset-lg-2",
   },
 ];
-export const numbers = [
-  {
-    id: 1,
-    title: "180+",
-    descr: "Projects Done",
-  },
-  {
-    id: 2,
-    title: "90+",
-    descr: "Happy Clients",
-  },
-  {
-    id: 3,
-    title: "30k",
-    descr: "Coffee Cups",
-  },
-  {
-    id: 4,
-    title: "Zero",
-    descr: "Negative Reviews",
-  },
-];
+  export const numbers = [
+    {
+      id: 1,
+      title: "12+",
+      descr: "Years of Engineering & Leadership Experience",
+    },
+    {
+      id: 2,
+      title: "50+",
+      descr: "Applications, Platforms, Products & Systems Implemented / Improved",
+    },
+    {
+      id: 3,
+      title: "10+",
+      descr: "Industries Served Across Tech, Health & Operations",
+    },
+    {
+      id: 4,
+      title: "100%",
+      descr: "On‑Time Project Delivery",
+    }
+  ];
 export const numberItems4 = [
   {
     id: 1,

@@ -50,7 +50,7 @@ export default function GradientServicesPage() {
                       className="section-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Web design that leaves an impression.
+                      We provide digital solutions shaped by thoughtful design and engineering excellence.
                     </p>
                   </div>
                 </div>

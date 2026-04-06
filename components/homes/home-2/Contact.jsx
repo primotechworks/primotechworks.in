@@ -36,7 +36,7 @@ export default function Contact({ heading }) {
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              +91 63525 40698
+              +91 98490 21468
             </a>
           </div>
         </div>

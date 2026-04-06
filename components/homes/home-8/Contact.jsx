@@ -15,7 +15,7 @@ export default function Contact() {
               {/* Change the phone number inside and link tag and href attribute */}
               Call us:
               <a href="tel:+916352540698" className="text-link">
-                +91 63525 40698
+                +91 98490 21468
               </a>
               <br />
               {/* Change the email address inside and link tag and href attribute */}

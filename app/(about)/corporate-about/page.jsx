@@ -59,7 +59,7 @@ export default function CorporateAboutPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Crafting immersive digital journeys for brands.
+                      Your next step toward a refined, high‑performing product begins here.
                     </p>
                   </div>
                 </div>

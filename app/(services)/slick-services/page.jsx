@@ -50,7 +50,7 @@ export default function SlickServicesPage() {
                       className="section-descr mb-0 wow fadeInUp"
                       data-wow-delay="0.2s"
                     >
-                      Web design that leaves an impression.
+                      We provide digital solutions shaped by thoughtful design and engineering excellence.
                     </p>
                   </div>
                 </div>
@@ -70,11 +70,10 @@ export default function SlickServicesPage() {
                       WHAT WE DO
                     </h2>
                     <h3 className="section-title mb-30">
-                      We provide the best development solutions.
+                      Test
                     </h3>
                     <p className="section-descr mb-50 mb-sm-40">
-                      The power of design help us to solve complex problems and
-                      cultivate business solutions.
+                      We offer development services that combine clarity, craftsmanship, and strategic design. Our process turns intricate challenges into elegant, dependable solutions built for long‑term success.
                     </p>
                     <div className="local-scroll">
                       <Link

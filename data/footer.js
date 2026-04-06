@@ -1,14 +1,13 @@
 export const footerLinks = [
   { name: "Privacy Policy", path: "#" },
   { name: "Terms & Conditions", path: "#" },
-  { name: "Presskit", path: "#" },
+  { name: "Refund Policy", path: "#" },
 ];
 
 export const footerLinks2 = [
   { text: "Privacy Policy", href: "#" },
   { text: "Terms & Conditions", href: "#" },
-  { text: "Presskit", href: "#" },
-  { text: "Credits", href: "#" },
+  { text: "Refund Policy", href: "#" },
 ];
 
 export const socialLinks = [
@@ -49,9 +48,7 @@ export const socialMediaLinks = [
 ];
 
 export const navigationLinks = [
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
-  { href: "#contact", text: "Contact" },
+  { href: "/about", text: "About" },
+  { href: "/services", text: "Services" },
+  { href: "/contact", text: "Contact" },
 ];

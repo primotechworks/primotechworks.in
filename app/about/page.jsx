@@ -51,7 +51,7 @@ export default function SlickAboutPage() {
                       className="section-descr mb-0 wow fadeInUp"
                       data-wow-delay="0.2s"
                     >
-                      Crafting immersive digital journeys for brands.
+                      Your next step toward a refined, high‑performing product begins here.
                     </p>
                   </div>
                 </div>
@@ -71,18 +71,21 @@ export default function SlickAboutPage() {
                       <h2 className="section-caption-slick mb-30 mb-sm-20">
                         Our Story
                       </h2>
+
                       <h3 className="section-title mb-30">
-                        We believe in creatives with a&nbsp;passion to smart
-                        design.
+                        We believe in thoughtful craftsmanship and design with purpose.
                       </h3>
+
                       <p className="text-gray mb-40">
-                        Etiam fermentum vehicula faucibus. Praesent ullamcorper
-                        urna id arcu molestie scelerisque. Sed imperdiet
-                        tristique mauris et faucibus. Maecenas semper augue non
-                        fringilla placerat. Curabitur luctus erat sit amet
-                        ultricies aliquam. Donec dictum convallis mauris et
-                        maximus. Nullam massa arcu, porta quis felis et,
-                        eleifend varius quam.
+                        Primo Techworks was built on a simple idea: great products come from clarity,
+                        curiosity, and a commitment to doing things the right way. Over the years,
+                        we’ve partnered with teams of all sizes to solve complex problems through
+                        intentional design and senior‑level engineering.  
+                        <br /><br />
+                        Our work is shaped by a deep respect for the craft, balancing creativity with
+                        technical rigor to create solutions that are intuitive, scalable, and built
+                        to last. Every project is an opportunity to bring ideas to life with care,
+                        precision, and a genuine dedication to meaningful outcomes.
                       </p>
                       {/* Features List */}
                       <div className="row features-list mt-n20 mb-50 mb-sm-30">
@@ -105,34 +108,10 @@ export default function SlickAboutPage() {
                       {/* End Features List */}
                       <div className="local-scroll wch-unset">
                         <Link
-                          href={`/slick-contact${dark ? "-dark" : ""}`}
+                          href={`/contact${dark ? "-dark" : ""}`}
                           className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                         >
-                          <span>Start a project</span>
-                        </Link>
-
-                        <Link
-                          href={`/slick-about${dark ? "-dark" : ""}`}
-                          className="link-hover-anim ms-2 ms-sm-5 me-2"
-                          data-link-animate="y"
-                        >
-                          <span className="link-strong link-strong-unhovered">
-                            Learn more{" "}
-                            <i
-                              className="mi-arrow-right size-24"
-                              aria-hidden="true"
-                            ></i>
-                          </span>
-                          <span
-                            className="link-strong link-strong-hovered"
-                            aria-hidden="true"
-                          >
-                            Learn more{" "}
-                            <i
-                              className="mi-arrow-right size-24"
-                              aria-hidden="true"
-                            ></i>
-                          </span>
+                          <span>Start a Project</span>
                         </Link>
                       </div>
                     </div>
@@ -193,51 +172,6 @@ export default function SlickAboutPage() {
               }}
             >
               <Facts />
-            </section>
-            <section
-              className={`page-section  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
-            >
-              {dark ? <TestimonialsDark /> : <Testimonials />}
-            </section>
-            <section className="page-section pt-0">
-              <div className="container">
-                <div
-                  className={`small-section ${
-                    dark ? "bg-dark-2 light-content" : "bg-gray-light-1"
-                  }  ps-4 ps-lg-0 pe-4 pe-lg-0 round position-relative overflow-hidden`}
-                >
-                  {/* Decoration Circles */}
-                  <div className="decoration-12" />
-                  <div className="decoration-13" />
-                  {/* End Decoration Circles */}
-                  <div className="row">
-                    <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                      <div className="row">
-                        <div className="col-md-7 col-lg-8 text-center text-md-start mb-sm-20">
-                          <h2 className="section-title-small mb-20">
-                            Like our creative works?
-                          </h2>
-                          <p className="text-gray mb-0">
-                            Quisque posuere mollis ullamcorper. Ut eget metus
-                            lorem ipsum posuere eget at ex. Aenean consequat
-                            vitae lorem in vehicula.
-                          </p>
-                        </div>
-                        <div className="col-md-5 col-lg-4 text-center text-md-end pt-2">
-                          <Link
-                            href={`/slick-portfolio${dark ? "-dark" : ""}`}
-                            className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim"
-                          >
-                            <span>View all works</span>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </section>
           </main>
           <footer className="page-section footer position-relative overflow-hidden pb-30">

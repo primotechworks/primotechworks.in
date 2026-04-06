@@ -9,7 +9,7 @@ export default function Service() {
         <div className="col-lg-6 mb-md-60 mb-sm-30">
           <h2 className="section-caption mb-xs-10">Our Services</h2>
           <h3 className="section-title mb-30">
-            <AnimatedText text="We provide the best development solutions." />
+            <AnimatedText text="Test" />
           </h3>
           <div className="row">
             <div className="col-lg-10">
@@ -17,8 +17,7 @@ export default function Service() {
                 className="section-descr mb-50 mb-sm-30 wow fadeInUp"
                 data-wow-delay="0.4s"
               >
-                The power of design help us to solve complex problems and
-                cultivate business solutions.
+                We offer development services that combine clarity, craftsmanship, and strategic design. Our process turns intricate challenges into elegant, dependable solutions built for long‑term success.
               </p>
             </div>
           </div>

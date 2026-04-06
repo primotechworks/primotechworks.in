@@ -36,12 +36,11 @@ export default function Footer8() {
               />
             </div>
             <p>
-              Integer auctor aliquet martor, sed lorem malesuada eros blandit
-              eget. Proin lacinia mortoc id odio vestibulum.
+              Building smarter digital solutions, innovations & futures.
             </p>
             <div className="clearlinks">
               <strong>T.</strong>
-              <a href="tel:+916352540698">+91 63525 40698</a>
+              <a href="tel:+916352540698">+91 98490 21468</a>
             </div>
             <div className="clearlinks">
               <strong>E.</strong>
@@ -88,7 +87,7 @@ export default function Footer8() {
         {/* Footer Text */}
         <div className="row text-gray">
           <div className="col-md-4 col-lg-3">
-            <b>© IB-Themes {new Date().getFullYear()}.</b>
+            <b>© Primo Techworks {new Date().getFullYear()}.</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
             <b>Based in Ahmedabad, India.</b>

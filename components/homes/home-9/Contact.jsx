@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
           <h2 className="section-caption-slick mb-30 mb-sm-20">Contact Us</h2>
           <h3 className="section-title mb-50 mb-sm-30">
-            We’re open to talk to good people.
+            Ready for your next Project? Let's Talk
           </h3>
           {/* Contact Information */}
           <div className="row">
@@ -71,7 +71,7 @@ export default function Contact() {
             <div className="col-md-5 d-flex align-items-stretch pt-40 pt-sm-0 pb-40 pb-sm-0 mb-sm-30">
               <div className="map-boxed-1 d-flex align-items-stretch">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6143.08567813473!2d-75.602457!3d39.660002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703f3cdadbfdb%3A0x80d20252268fc006!2zMjQ1IFF1aWdsZXkgQmx2ZCBzdGUgaywgTmV3IENhc3RsZSwgREUgMTk3MjAsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1677158678087!5m2!1suk!2sua"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8576429901987!2d72.50819691247453!3d23.028998579082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b370fdf7101%3A0x168e6d8d1195ecf8!2sPanchgini%20Apartment%2C%20Ramdevnagar%20Rd%2C%20Satellite%2C%20Ahmedabad%2C%20Gujarat%20380015%2C%20India!5e0!3m2!1sen!2sus!4v1775460391263!5m2!1sen!2sus" 
                   width={600}
                   height={450}
                   style={{ border: 0 }}
@@ -85,7 +85,7 @@ export default function Contact() {
             {/* Contact Form Column */}
             <div className="col-md-7">
               <div className="box-shadow bg-white round p-4 p-sm-5 position-relative z-index-1">
-                <h4 className="h3 mb-40 mb-sm-30">Get in Touch</h4>
+                <h4 className="h3 mb-40 mb-sm-30">Start a Conversation</h4>
                 {/* Contact Form */}
                 <form
                   onSubmit={(e) => e.preventDefault()}

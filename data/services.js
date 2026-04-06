@@ -161,27 +161,27 @@ export const services4 = [
 
 export const services5 = [
   {
-    caption: "Branding",
-    title: "Brand Strategy",
-    text: "Curabitur vel molestie dolor vulputate diam. Etiam ornare facilisis euismod cras blandit vel purus nec varius.",
+    caption: "Architecture & Strategy",
+    title: "Technical Architecture & Systems Design",
+    text: "End‑to‑end architecture guidance for scalable, resilient platforms. From distributed systems to cloud-native patterns, we help teams design solutions that are robust, future-proof, and aligned with business goals.",
     delay: 0,
   },
   {
-    caption: "Mobile & Web",
-    title: "UI/UX Design",
-    text: "Quisque accumsan augue nec ligula gravida, eleifend volutpat augue luctus vulputate imperdiet quis sed odio.",
+    caption: "Product & Experience",
+    title: "UX, UI & Product Refinement",
+    text: "User‑centered design for web and mobile products. We refine flows, interfaces, and product narratives to create experiences that feel intuitive, modern, and aligned with your brand’s identity.",
     delay: 0.05,
   },
   {
-    caption: "Video & Animation",
-    title: "Motion Design",
-    text: "Maecenas finibus ipsum orci, sit amet eleifend purus rutrum fringilla. Nunc quis lobortis nulla.",
+    caption: "Engineering Leadership",
+    title: "Team Development & Hiring Frameworks",
+    text: "High‑signal interview loops, technical hiring frameworks, and engineering mentorship. We help organizations build strong teams, improve processes, and elevate engineering culture.",
     delay: 0.1,
   },
   {
-    caption: "Marketing",
-    title: "Research & Solutions",
-    text: "Cras nisl ex, fermentum id volutpat luctus, interdum luctus tortor. Nunc vestibulum accumsan.",
+    caption: "Operations & Optimization",
+    title: "Workflow, Process & Delivery Consulting",
+    text: "Operational audits, workflow redesign, and delivery optimization. We streamline systems, reduce friction, and help teams ship faster with clarity, alignment, and confidence.",
     delay: 0.15,
   },
 ];

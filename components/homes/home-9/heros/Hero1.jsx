@@ -26,9 +26,7 @@ export default function Hero1() {
                       className="section-descr mb-50 mb-sm-40 wow fadeInUp"
                       data-wow-delay="0.15s"
                     >
-                      We are an award winning studio specializing in design and
-                      engineering. Our mission is to make work process
-                      meaningful.
+                      From idea to execution; expert engineering that moves your business forward. Design. Build. Scale. With clarity and confidence. Want to build your dream digital product? Let's talk!
                     </p>
                   </div>
                 </div>
