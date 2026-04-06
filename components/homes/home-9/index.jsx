@@ -33,7 +33,7 @@ export default function Home9({ onePage = false, dark = false }) {
                   About Primo Techworks
                 </h2>
                 <h3 className="section-title mb-30">
-                  We believe in creatives with a&nbsp;passion to smart design.
+                  A team driven by curiosity, creativity, and meaningful problem‑solving.
                 </h3>
                 <p className="text-gray mb-40">
                   We are a team of passionate developers, designers, and strategists dedicated to creating innovative solutions. 

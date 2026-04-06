@@ -39,7 +39,7 @@ export default function Hero1() {
                     href="#contact"
                     className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                   >
-                    <span>Start a project</span>
+                    <span>Start a Project</span>
                   </a>
                   <a
                     href="#about"

@@ -44,15 +44,8 @@ export default function SlickAboutPage() {
                 <div className="row">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                     <h1 className="hs-title-10 mb-10 wow fadeInUp">
-                      About Studio
+                      About Us
                     </h1>
-
-                    <p
-                      className="section-descr mb-0 wow fadeInUp"
-                      data-wow-delay="0.2s"
-                    >
-                      Your next step toward a refined, high‑performing product begins here.
-                    </p>
                   </div>
                 </div>
               </div>

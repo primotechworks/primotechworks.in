@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Contacts || Primo Techworks",
+    "Contact || Primo Techworks",
   description:
     "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
 };
@@ -46,13 +46,6 @@ export default function SlickContactPage() {
                     <h1 className="hs-title-10 mb-10 wow fadeInUp">
                       Contact Us
                     </h1>
-
-                    <p
-                      className="section-descr mb-0 wow fadeInUp"
-                      data-wow-delay="0.2s"
-                    >
-                      Your next step toward a refined, high‑performing product begins here.
-                    </p>
                   </div>
                 </div>
               </div>

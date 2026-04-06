@@ -1,13 +1,13 @@
 export const footerLinks = [
-  { name: "Privacy Policy", path: "#" },
-  { name: "Terms & Conditions", path: "#" },
-  { name: "Refund Policy", path: "#" },
+  { name: "Privacy Policy", path: "/privacypolicy" },
+  { name: "Terms & Conditions", path: "/termsandconditions" },
+  { name: "Refund & Cancellation Policy", path: "/refundandcancellationpolicy" },
 ];
 
 export const footerLinks2 = [
-  { text: "Privacy Policy", href: "#" },
-  { text: "Terms & Conditions", href: "#" },
-  { text: "Refund Policy", href: "#" },
+  { text: "Privacy Policy", href: "/privacypolicy" },
+  { text: "Terms & Conditions", href: "/termsandconditions" },
+  { text: "Refund & Cancellation Policy", href: "/refundandcancellationpolicy" },
 ];
 
 export const socialLinks = [

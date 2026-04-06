@@ -26,6 +26,7 @@ export default function Header9({ links }) {
             alt="Primo Techworks Logo"
             width={106}
             height={36}
+            style={{ width: '100%', height: 'auto'}}
             className="light-mode-logo"
           />
           <Image
@@ -33,6 +34,7 @@ export default function Header9({ links }) {
             alt="Primo Techworks Logo"
             width={106}
             height={36}
+            style={{ width: '100%', height: 'auto'}}
             className="dark-mode-logo"
           />
         </a>
@@ -58,12 +60,12 @@ export default function Header9({ links }) {
           {/* <LanguageSelect /> */}
           {/* End Languages */}
           <li>
-            <a href="#contact" className="opacity-1 no-hover">
+            <a href="/contact" className="opacity-1 no-hover">
               <span
                 className="btn btn-mod btn-color-light btn-border-white-light btn-small btn-circle"
                 data-btn-animate="y"
               >
-                Get in touch
+                Get in Touch
               </span>
             </a>
           </li>

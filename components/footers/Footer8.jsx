@@ -25,6 +25,7 @@ export default function Footer8() {
                 alt="Your Company Logo"
                 width={106}
                 height={36}
+                style={{ width: '100%', height: 'auto'}}
                 className="light-mode-logo"
               />
               <Image
@@ -32,6 +33,7 @@ export default function Footer8() {
                 alt="Your Company Logo"
                 width={106}
                 height={36}
+                style={{ width: '100%', height: 'auto'}}
                 className="dark-mode-logo"
               />
             </div>
