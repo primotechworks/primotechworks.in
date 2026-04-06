@@ -57,60 +57,85 @@ export default function SlickRefundAndCancellationPage() {
                   <div className="col-lg-12 d-flex align-items-center order-first order-lg-last mb-md-60 mb-sm-40">
                     <div className="w-100 wow fadeInUp">
                       <div className="text-gray mb-40">
+                        <h5>1. General Policy</h5>
                         <p>
-                          These Terms and Conditions (“Terms”) constitute a binding agreement between
-                          Primo Techworks (“we,” “us,” or “our”) and you (“you” or “your”), governing
-                          your use of our website and/or purchase of goods/services from us
-                          (collectively, “Services”). By using our website and/or making a purchase
-                          from us, you expressly agree to the following Terms.
+                          At Primo Techworks, we aim to deliver high‑quality services with clarity and
+                          transparency. This Refund & Cancellation Policy outlines how cancellations,
+                          refunds, and project changes are handled for all engagements with us.
                         </p>
 
-                        <h5>1. Use of Services</h5>
+                        <h5>2. Service‑Based Work (Design, Development, Consulting)</h5>
+                        <p>Because our work involves time, expertise, and custom deliverables, refunds are handled as follows:</p>
+
+                        <p><strong>Before Work Begins</strong></p>
+                        <ul>
+                          <li>If you cancel before any work has started, you may be eligible for a partial refund, minus administrative or onboarding costs.</li>
+                        </ul>
+
+                        <p><strong>After Work Has Begun</strong></p>
+                        <ul>
+                          <li>Once work has started, payments are non‑refundable.</li>
+                          <li>Refunds are not issued for time already spent on research, design, development, or consultation.</li>
+                          <li>Refunds are not issued for completed deliverables or work in progress.</li>
+                          <li>Refunds are not issued for delays caused by incomplete information or lack of client response.</li>
+                        </ul>
+
+                        <p><strong>Milestone‑Based Projects</strong></p>
+                        <ul>
+                          <li>Payments for completed milestones are non‑refundable.</li>
+                          <li>If a project is paused or cancelled by the client, all completed work up to that point must be paid in full.</li>
+                        </ul>
+
+                        <h5>3. Digital Deliverables</h5>
                         <p>
-                          You shall not use our website and/or Services for any purpose that is
-                          unlawful, illegal or prohibited under Indian laws, or any other local laws
-                          that might apply to you. It is your responsibility to ensure that any goods,
-                          services, or information available through our website meet your specific
-                          requirements.
+                          All digital deliverables—including designs, documents, prototypes, or code—are
+                          non‑refundable once shared with the client. This includes drafts, partial work,
+                          and final files.
                         </p>
 
-                        <h5>2. Orders & Availability</h5>
+                        <h5>4. Cancellations by Primo Techworks</h5>
+                        <p>We reserve the right to cancel a project under rare circumstances, such as:</p>
+
+                        <ul>
+                          <li>Non‑payment</li>
+                          <li>Repeated failure to provide required information</li>
+                          <li>Misuse of services</li>
+                          <li>Violation of our Terms & Conditions</li>
+                        </ul>
+
                         <p>
-                          You agree to provide accurate and complete information for order fulfilment
-                          and service delivery. We shall not be liable for issues resulting from
-                          incorrect or incomplete information you provide to us. All purchases/orders
-                          are subject to availability. We reserve the right to cancel orders at our
-                          discretion, including but not limited to cases of non‑availability of goods
-                          or suspected fraud.
+                          In such cases, you will receive a refund only for work not yet completed, if applicable.
                         </p>
 
-                        <h5>3. Payments</h5>
+                        <h5>5. Project Changes & Scope Adjustments</h5>
                         <p>
-                          Payments must be made in full at the time of purchase unless otherwise
-                          agreed upon by us. You must ensure that the payment details provided are
-                          valid and belong to you.
+                          If you request changes that alter the original scope, additional costs may apply.
+                          Timelines may also be adjusted. Refunds are not provided for previously approved
+                          or completed work.
                         </p>
 
-                        <h5>4. Liability</h5>
+                        <h5>6. No‑Show or Non‑Responsive Clients</h5>
                         <p>
-                          We shall not be liable for any loss or damage arising from the use of our
-                          Services, whether direct, indirect, or consequential. We shall not be liable
-                          for any loss or damage arising directly or indirectly from the decline of
-                          authorization for any transaction due to the Cardholder exceeding the preset
-                          limit mutually agreed upon with our acquiring bank.
+                          If a client becomes unresponsive for 14 days or more, the project may be paused
+                          or closed. Payments made to date remain non‑refundable. Resuming work may require
+                          a restart fee.
                         </p>
 
-                        <h5>5. Governing Law & Disputes</h5>
+                        <h5>7. How to Request a Cancellation</h5>
                         <p>
-                          Any dispute arising out of the use of our website, purchase from us, or any
-                          engagement with us shall be subject to the laws of India.
+                          To request a cancellation or discuss concerns, contact us at:
+                          <br />
+                          <strong>Email:</strong> support@primotechworks.in
+                          <br />
+                          <strong>Phone:</strong> +91 98490 21468
                         </p>
 
-                        <h5>6. Contact Information</h5>
+                        <h5>8. Policy Updates</h5>
                         <p>
-                          If you have any questions regarding these Terms, please contact us at
-                          <b>support@primotechworks.in / +91 98490 21468</b>.
+                          We may update this Refund & Cancellation Policy from time to time. Any changes
+                          will be posted on this page with an updated revision date.
                         </p>
+                        <p><strong>Last Revised: 6th April 2026</strong></p>
                       </div>
                     </div>
                   </div>
