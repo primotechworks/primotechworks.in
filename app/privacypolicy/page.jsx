@@ -135,7 +135,7 @@ export default function SlickPrivacyPolicyPage() {
                           <li>Ask how your data is being used</li>
                         </ul>
 
-                        <p>To make a request, simply contact us at <b>primotechworks@gmail.com</b>.</p>
+                        <p>To make a request, simply contact us at <b>info@primotechworks.in</b>.</p>
 
                         <h5>7. Data Retention</h5>
                         <p>We retain personal information only as long as necessary to:</p>
@@ -167,7 +167,7 @@ export default function SlickPrivacyPolicyPage() {
                           reach out anytime:
                         </p>
                         <p>
-                          <b>Email: primotechworks@gmail.com<br />Phone: +91 98490 21468</b>
+                          <b>Email: info@primotechworks.in<br />Phone: +91 98490 21468</b>
                         </p>
                       </div>
                       <div className="local-scroll wch-unset">

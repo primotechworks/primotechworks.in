@@ -13,9 +13,9 @@ export const contactItems = [
   {
     iconClass: "mi-email",
     title: "Email",
-    text: "primotechworks@gmail.com",
+    text: "info@primotechworks.in",
     link: {
-      url: "mailto:primotechworks@gmail.com",
+      url: "mailto:info@primotechworks.in",
       text: "Say Hello",
     },
   },

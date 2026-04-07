@@ -20,8 +20,8 @@ export default function Contact() {
               <br />
               {/* Change the email address inside and link tag and href attribute */}
               Say hi:
-              <a href="mailto:primotechworks@gmail.com" className="text-link">
-                primotechworks@gmail.com
+              <a href="mailto:info@primotechworks.in" className="text-link">
+                info@primotechworks.in
               </a>
             </p>
             <div>

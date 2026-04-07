@@ -1,7 +1,9 @@
-import Footer1 from "@/components/footers/Footer1";
+import Footer from "@/components/footers/Footer8";
+import Header from "@/components/headers/Header9";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { slickMultipages } from "@/data/menu";
 export const metadata = {
   title:
     "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
@@ -13,62 +15,17 @@ export default function MainAboutPage1() {
     <>
       <div className="theme-main">
         <div className="page" id="top">
+          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
+            <Header links={slickMultipages} />
+          </nav>
           <>
-            <nav className="main-nav dark light-after-scroll transparent stick-fixed wow-menubar wch-unset">
-              <div className="main-nav-sub full-wrapper">
-                {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
-              If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
-              image size for support of retina screens. See details in the template documentation. *) */}
-                <div className="nav-logo-wrap local-scroll">
-                  <Link href={`/`} className="logo">
-                    <Image
-                      src="/assets/images/logo-white.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
-                      className="logo-white"
-                    />
-                    <Image
-                      src="/assets/images/logo-dark.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
-                      className="logo-dark"
-                    />
-                  </Link>
-                </div>
-                {/* Mobile Menu Button */}
-                <div className="mobile-nav" role="button" tabIndex={0}>
-                  <i className="mobile-nav-icon" />
-                  <span className="visually-hidden">Menu</span>
-                </div>
-                {/* Main Menu */}
-                <div className="inner-nav desktop-nav">
-                  <ul className="clearlist scroll-nav local-scroll justify-content-end">
-                    <li className="active">
-                      <a href="mailto:primotechworks@gmail.com">
-                        <i className="mi-email align-center" />
-                        primotechworks@gmail.com
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="mi-call align-center" /> 0307-567-890
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* End Main Menu */}
-              </div>
-            </nav>
-            {/* End Navigation Panel */}
             <main id="main">
               {/* Home Section */}
               <section
-                className="home-section bg-dark-1 bg-dark-alpha-60 light-content parallax-5"
+                className="home-section bg-dark-1 bg-dark-alpha-0 light-content parallax-5"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/full-width-images/section-bg-3.jpg)",
+                    "url(/assets/images/full-width-images/404-not-found.png)",
                 }}
                 id="home"
               >
@@ -112,7 +69,7 @@ export default function MainAboutPage1() {
             </main>
           </>
 
-          <Footer1 />
+          <Footer />
         </div>{" "}
       </div>
     </>

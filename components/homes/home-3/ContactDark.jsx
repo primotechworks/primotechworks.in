@@ -25,11 +25,11 @@ export default function ContactDark() {
           <div className="p-4 p-md-5">
             <h3 className="contact-1-title">Email</h3>
             <div className="contact-1-text text-break mb-10">
-              primotechworks@gmail.com
+              info@primotechworks.in
             </div>
             <div className="contact-1-link">
               {/* Change the email address in the "href" attribute */}
-              <a href="mailto:primotechworks@gmail.com">Say hello</a>
+              <a href="mailto:info@primotechworks.in">Say hello</a>
             </div>
           </div>
         </div>

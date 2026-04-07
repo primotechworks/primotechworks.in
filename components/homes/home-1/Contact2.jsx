@@ -54,8 +54,8 @@ export default function Contact2() {
                 <h4 className="alt-features-title">Say hello</h4>
                 <div className="alt-features-descr clearlinks">
                   <div>
-                    <a href="mailto:primotechworks@gmail.com">
-                      primotechworks@gmail.com
+                    <a href="mailto:info@primotechworks.in">
+                      info@primotechworks.in
                     </a>
                   </div>
                   <div>+91 98490 21468</div>

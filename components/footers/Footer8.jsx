@@ -41,12 +41,16 @@ export default function Footer8() {
               Building smarter digital solutions, innovations & futures.
             </p>
             <div className="clearlinks">
-              <strong>T.</strong>
+              {/* Icon Code */}
+              <i className="mi-mobile" />{" "}
+              {/* End Icon Code */}
               <a href="tel:+916352540698">+91 98490 21468</a>
             </div>
             <div className="clearlinks">
-              <strong>E.</strong>
-              <a href="mailto:primotechworks@gmail.com">primotechworks@gmail.com</a>
+              {/* Icon Code */}
+              <i className="mi-email" />{" "}
+              {/* End Icon Code */}
+              <a href="mailto:info@primotechworks.in">info@primotechworks.in</a>
             </div>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2">

@@ -50,7 +50,7 @@ export default function Footer1({ dark = false }) {
             </div>
             <div className="clearlinks">
               <strong>E.</strong>
-              <a href="mailto:primotechworks@gmail.com">primotechworks@gmail.com</a>
+              <a href="mailto:info@primotechworks.in">info@primotechworks.in</a>
             </div>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2">

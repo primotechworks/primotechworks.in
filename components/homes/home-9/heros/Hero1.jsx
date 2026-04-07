@@ -86,7 +86,7 @@ export default function Hero1() {
                   <div className="composition-4-image-1">
                     <div className="composition-4-image-1-inner">
                       <Image
-                        src="/assets/images/demo-slick/hs-image-1.jpg"
+                        src="/assets/images/primotechworks/hs-image-9.png"
                         alt="Image Description"
                         width={850}
                         height={834}
@@ -96,7 +96,7 @@ export default function Hero1() {
                   <div className="composition-4-image-2">
                     <div className="composition-4-image-2-inner">
                       <Image
-                        src="/assets/images/demo-slick/hs-image-2.jpg"
+                        src="/assets/images/primotechworks/hs-image-4.png"
                         alt="Image Description"
                         width={570}
                         height={598}

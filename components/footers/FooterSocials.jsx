@@ -4,7 +4,7 @@ export default function FooterSocials() {
   const socials = [
     { name: "Facebook", icon: "fa-facebook", url: "https://www.facebook.com/PrimoTechworks" },
     { name: "YouTube", icon: "fa-youtube", url: "https://www.youtube.com/@PrimoTechworks" },
-    { name: "Twitter", icon: "fa-twitter", url: "https://x.com/primotechworks" },
+    { name: "Twitter", icon: "fa-x-twitter", url: "https://x.com/primotechworks" },
     { name: "LinkedIn", icon: "fa-linkedin", url: "https://www.linkedin.com/company/primotechworks" },
   ];
 

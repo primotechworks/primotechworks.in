@@ -152,7 +152,7 @@ export default function Home9({ onePage = false, dark = false }) {
                   <div className="composition-5-image-1">
                     <div className="composition-5-image-1-inner">
                       <Image
-                        src="/assets/images/demo-slick/hs-image-3.jpg"
+                        src="/assets/images/primotechworks/hs-image-3.png"
                         alt="Image Description"
                         width={850}
                         height={914}
@@ -164,7 +164,7 @@ export default function Home9({ onePage = false, dark = false }) {
                   <div className="composition-5-image-2">
                     <div className="composition-5-image-2-inner">
                       <Image
-                        src="/assets/images/demo-slick/hs-image-4.jpg"
+                        src="/assets/images/primotechworks/hs-image-7.png"
                         alt="Image Description"
                         width={400}
                         height={400}

@@ -120,7 +120,7 @@ export default function SlickServicesPage() {
                         <Image
                           width={386}
                           height={400}
-                          src="/assets/images/promo-3.jpg"
+                          src="/assets/images/primotechworks/hs-image-7.png"
                           alt="Image Description"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
@@ -131,7 +131,7 @@ export default function SlickServicesPage() {
                         <Image
                           width={810}
                           height={512}
-                          src="/assets/images/promo-4.jpg"
+                          src="/assets/images/primotechworks/hs-image-2.png"
                           alt="Image Description"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
@@ -147,7 +147,7 @@ export default function SlickServicesPage() {
                         <Image
                           width={386}
                           height={500}
-                          src="/assets/images/promo-5.jpg"
+                          src="/assets/images/primotechworks/hs-image-8.png"
                           alt="Image Description"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
