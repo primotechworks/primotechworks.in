@@ -12,9 +12,9 @@ import {
 import { TEAM, VALUES } from "@/data/site";
 
 export const metadata = {
-  title: "About Us: A Senior Product Engineering Studio",
+  title: "About Us",
   description:
-    "Primo Techworks is a senior product engineering studio in Ahmedabad, India, building web, mobile and AI products for clients worldwide, and building our own products in Primo Labs.",
+    "Primo Techworks is a team of passionate developers, designers and strategists in Ahmedabad, India, building innovative software solutions for clients worldwide, and our own products in Primo Labs.",
   alternates: { canonical: "/about" },
 };
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
               Engineers who build products <span className="pt-gradient-text">like we own them</span>
             </h1>
             <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 680 }}>
-              We&apos;re a senior product engineering studio based in Ahmedabad, India. We partner
+              We&apos;re a team of passionate developers, designers and strategists based in Ahmedabad, India. We partner
               with founders, growing businesses and enterprise teams to turn ambitious ideas into
               software people love to use.
             </p>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                   to be that way.
                 </p>
                 <p>
-                  So we built a studio around senior people and honest process. The engineers and
+                  So we built a team around senior people and honest process. The engineers and
                   designers you meet on the first call are the ones who build your product. We
                   show working software every week, and we design for the team that will maintain
                   it long after launch.
@@ -228,7 +228,7 @@ export default function AboutPage() {
                 Based in Ahmedabad. Working worldwide.
               </h2>
               <p className="pt-lead">
-                Our studio is in Satellite, Ahmedabad, and the products we build serve users in
+                Our office is in Satellite, Ahmedabad, and the products we build serve users in
                 Canada and around the world. We schedule overlap hours with every client, so your team gets
                 real-time collaboration when it matters and steady progress while you sleep.
               </p>

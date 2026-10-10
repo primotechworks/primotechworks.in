@@ -213,7 +213,7 @@ export function WhySection() {
             The senior team you&apos;d hire, if you could
           </h2>
           <p className="pt-lead">
-            We combine the craft of a product company with the flexibility of a studio, and we
+            We combine the craft of a product company with the flexibility of a dedicated partner, and we
             treat your product like it&apos;s our own.
           </p>
         </div>

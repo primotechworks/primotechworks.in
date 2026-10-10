@@ -1,7 +1,7 @@
 export const SITE_URL = "https://www.primotechworks.in";
 export const SITE_NAME = "Primo Techworks";
 export const SITE_DESCRIPTION =
-  "Primo Techworks is a senior product engineering studio in Ahmedabad, India. We design and build web apps, mobile apps and AI-powered software for startups, growing businesses and enterprise teams worldwide.";
+  "Primo Techworks builds smarter digital futures with innovative software solutions. A team of passionate developers, designers and strategists in Ahmedabad, India, building web apps, mobile apps and AI-powered software for businesses worldwide.";
 
 export const CONTACT = {
   email: "info@primotechworks.in",

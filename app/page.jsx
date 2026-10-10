@@ -19,9 +19,9 @@ import { services } from "@/data/services";
 import { INDUSTRIES } from "@/data/site";
 
 export const metadata = {
-  title: { absolute: "Primo Techworks | Web, Mobile & AI Product Engineering Studio" },
+  title: { absolute: "Primo Techworks | Building Smarter Digital Solutions" },
   description:
-    "Primo Techworks is a senior product engineering studio. We design and build web apps, mobile apps and AI-powered software for startups, SMBs and enterprise teams worldwide, from Ahmedabad, India.",
+    "Building smarter digital futures with innovative software solutions. Primo Techworks designs and builds web apps, mobile apps and AI-powered software for startups, growing businesses and enterprise teams, from Ahmedabad, India.",
 };
 
 const STACK = [
@@ -43,7 +43,7 @@ export default function HomePage() {
             <div>
               <div className="pt-badge" data-reveal>
                 <span className="pt-badge-dot">Taking on new projects</span>
-                <span className="pt-badge-text">Senior product engineering studio</span>
+                <span className="pt-badge-text">Innovative software solutions</span>
               </div>
               <h1 className="pt-h1" id="hero-title" data-reveal style={{ "--d": "0.05s" }}>
                 <span className="visually-hidden">Building smarter digital solutions, innovations &amp; futures.</span>
@@ -101,7 +101,7 @@ export default function HomePage() {
             <div className="pt-head" data-reveal>
               <div className="pt-eyebrow">What we do</div>
               <h2 className="pt-h2" id="services-title">
-                End-to-end product engineering, under one roof
+                End-to-end software solutions, under one roof
               </h2>
               <p className="pt-lead">
                 Strategy, design, engineering and AI, delivered by one senior team that owns the

@@ -74,7 +74,7 @@ export default function ContactPage() {
                     <Icon name="pin" size={20} />
                   </span>
                   <span>
-                    <small>Visit the studio</small>
+                    <small>Visit our office</small>
                     <b>Satellite, Ahmedabad, Gujarat, India</b>
                   </span>
                 </a>

@@ -16,7 +16,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Web, Mobile & AI Product Engineering Studio`,
+    default: `${SITE_NAME} | Building Smarter Digital Solutions`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -31,7 +31,7 @@ export const metadata = {
         url: "/assets/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Primo Techworks: web, mobile and AI product engineering",
+        alt: "Primo Techworks: building smarter digital solutions",
       },
     ],
   },

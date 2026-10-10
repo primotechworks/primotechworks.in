@@ -36,7 +36,7 @@ export default function InsightsPage() {
           <div style={{ maxWidth: 820 }}>
             <div className="pt-badge" data-reveal>
               <span className="pt-badge-dot">Coming soon</span>
-              <span className="pt-badge-text">Insights from the studio</span>
+              <span className="pt-badge-text">Insights from the team</span>
             </div>
             <h1 className="pt-h1" id="blog-hero" data-reveal style={{ "--d": "0.05s" }}>
               Lessons from building <span className="pt-gradient-text">real products</span>
