@@ -1,24 +1,25 @@
-import Image from "next/image";
+// Primary brand logo: the original artwork, pre-rendered at the exact sizes it is
+// displayed at (1x/2x/3x) so it stays sharp without browser or optimizer resampling.
+// Alternatives: LogoFlat.jsx (flat mark) and /assets/images/brand/primo-emblem.svg (vector emblem redraw).
+const SIZES = {
+  44: [44, 88, 132],
+  64: [64, 128, 192],
+};
+const RATIO = 1423 / 367;
 
-// Primary brand logo: a vector redraw of the original emblem (sharp at any size)
-// paired with the original "Primo Techworks" lettering.
-// An alternative flat logo lives in LogoFlat.jsx.
-export default function Logo({ height = 40, priority = false }) {
-  const wordH = Math.round(height * 0.83);
-  const wordW = Math.round((wordH * 962) / 303);
+export default function Logo({ height = 44, priority = false }) {
+  const [x1, x2, x3] = SIZES[height] || SIZES[44];
+  const src = (h) => `/assets/images/brand/logo-${h}.png`;
   return (
-    <span className="pt-brandlogo" style={{ gap: Math.round(height * 0.16) }}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/assets/images/brand/primo-emblem.svg" alt="" width={height} height={height} />
-      <Image
-        src="/assets/images/brand/primo-wordmark.webp"
-        alt="Primo Techworks"
-        width={962}
-        height={303}
-        priority={priority}
-        sizes={`${wordW}px`}
-        style={{ height: wordH, width: "auto" }}
-      />
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src(x1)}
+      srcSet={`${src(x1)} 1x, ${src(x2)} 2x, ${src(x3)} 3x`}
+      alt="Primo Techworks"
+      width={Math.round(height * RATIO)}
+      height={height}
+      fetchPriority={priority ? "high" : undefined}
+      style={{ display: "block", height, width: "auto" }}
+    />
   );
 }

@@ -47,7 +47,7 @@ const orgSchema = {
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/assets/images/brand/primo-emblem.svg`,
+  logo: `${SITE_URL}/icons/android-chrome-512x512.png`,
   image: `${SITE_URL}/assets/images/og-image.jpg`,
   description: SITE_DESCRIPTION,
   email: CONTACT.email,
