@@ -1995,6 +1995,8 @@ a.pt-card:hover .pt-icon,
 .pt-person img {
   width: 100%;
   height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 14px;
   margin-bottom: 24px;
 }
@@ -2655,18 +2657,17 @@ a.pt-card:hover .pt-icon,
   flex: none;
 }
 .pt-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 24px;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 14px;
   display: grid;
   place-items: center;
   margin-bottom: 24px;
-  background: linear-gradient(135deg, var(--pt-brand-400), var(--pt-brand-600));
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
+  background: radial-gradient(circle at 50% 42%, #e4e6e9, #b9bdc3);
+  color: #4b5563;
+  font-size: 56px;
+  font-weight: 600;
   letter-spacing: -0.02em;
-  box-shadow: 0 14px 30px -12px rgba(26, 109, 240, 0.55);
 }
 .pt-person .role {
   margin-bottom: 4px;

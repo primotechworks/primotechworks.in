@@ -146,11 +146,12 @@ export const HOME_FAQS = [
 ];
 
 // Founder / team profiles for the About page. The section stays hidden while empty.
-// Shape: { name, role, photo: "/assets/images/team/name.jpg", bio, linkedin }
+// Shape: { name, role, photo: "/assets/images/team/name.webp", bio, linkedin }
+// Photos: 640x640 black & white, tone-matched (see resources/Team for originals).
 export const TEAM = [
-  { name: "Pradyut Modi", role: "President", linkedin: "https://www.linkedin.com/in/pradyutmodi1961/" },
-  { name: "Jay Modi", role: "Founder & CTO", linkedin: "https://www.linkedin.com/in/jaymodi27/" },
-  { name: "Nidhi Karia", role: "Chief HR", linkedin: "https://www.linkedin.com/in/nidhi-karia-37442453/" },
+  { name: "Pradyut Modi", role: "President", photo: "/assets/images/team/pradyut-modi.webp", linkedin: "https://www.linkedin.com/in/pradyutmodi1961/" },
+  { name: "Jay Modi", role: "Founder & CTO", photo: "/assets/images/team/jay-modi.webp", linkedin: "https://www.linkedin.com/in/jaymodi27/" },
+  { name: "Nidhi Karia", role: "Chief HR", photo: "/assets/images/team/nidhi-karia.webp", linkedin: "https://www.linkedin.com/in/nidhi-karia-37442453/" },
 ];
 
 export const VALUES = [

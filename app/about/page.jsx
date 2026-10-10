@@ -148,7 +148,7 @@ export default function AboutPage() {
               {TEAM.map((p) => (
                 <figure className="pt-card pt-person" key={p.name} data-reveal>
                   {p.photo ? (
-                    <Image src={p.photo} alt={p.name} width={480} height={560} sizes="(max-width: 991px) 100vw, 380px" />
+                    <Image src={p.photo} alt={`${p.name}, ${p.role}`} width={640} height={640} sizes="(max-width: 991px) 100vw, 380px" />
                   ) : (
                     <div className="pt-avatar" aria-hidden="true">
                       {p.name
