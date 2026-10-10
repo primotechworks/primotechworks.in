@@ -726,19 +726,6 @@ a.pt-card:hover .pt-icon,
   color: var(--pt-brand-400);
   margin-bottom: 40px;
 }
-.pt-step-num::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(59, 155, 255, 0.5), transparent);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 1.2s var(--pt-ease) 0.3s;
-}
-.is-in .pt-step-num::after,
-.pt-step.is-in .pt-step-num::after {
-  transform: scaleX(1);
-}
 .pt-step h3 {
   font-size: 20px;
   margin-bottom: 10px;
