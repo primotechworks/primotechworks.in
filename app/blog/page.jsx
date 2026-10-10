@@ -5,7 +5,7 @@ import { Breadcrumbs, CtaSection } from "@/components/site/Sections";
 
 export const metadata = {
   title: "Insights",
-  description: "Engineering, product and AI insights from the Primo Techworks team. Coming soon.",
+  description: "Business, product, technology and AI insights from the Primo Techworks team. Coming soon.",
   // Hidden from search until real articles are published.
   robots: { index: false, follow: true },
 };
@@ -42,7 +42,7 @@ export default function InsightsPage() {
               Lessons from building <span className="pt-gradient-text">real products</span>
             </h1>
             <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 640 }}>
-              Practical writing on engineering, product and AI, drawn from the products we build.
+              Practical writing on business, product, technology and AI, drawn from the products we build.
               Here&apos;s what we&apos;re working on.
             </p>
           </div>

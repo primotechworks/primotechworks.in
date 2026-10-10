@@ -20,7 +20,7 @@ export const metadata = {
 const FAQS = [
   {
     q: "Can you handle a project end to end?",
-    a: "Yes. Most clients work with us from discovery through design, engineering, launch and ongoing improvement, so one team owns the whole product and nothing gets lost between agencies.",
+    a: "Yes. Most clients work with us from discovery through strategy, design, development, launch and ongoing improvement, so one team owns the whole product and nothing gets lost between agencies.",
   },
   {
     q: "Can we hire you for just one part, like design or architecture?",

@@ -36,12 +36,12 @@ export default function AboutPage() {
               About Primo Techworks
             </div>
             <h1 className="pt-h1" id="about-hero" data-reveal style={{ "--d": "0.05s" }}>
-              Engineers who build products <span className="pt-gradient-text">like we own them</span>
+              Every expert your project needs, <span className="pt-gradient-text">in one team</span>
             </h1>
             <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 680 }}>
-              We&apos;re a team of passionate developers, designers and strategists based in Ahmedabad, India. We partner
-              with founders, growing businesses and enterprise teams to turn ambitious ideas into
-              software people love to use.
+              From business analysis and product ownership to design, development, quality
+              assurance and HR, Primo Techworks is a complete team of professionals in Ahmedabad,
+              India, dedicated to building smart, innovative solutions.
             </p>
           </div>
         </div>
@@ -58,20 +58,19 @@ export default function AboutPage() {
               </h2>
               <div className="pt-prose">
                 <p>
-                  Primo Techworks exists because too many software projects run late, cost more
-                  than promised and leave behind code nobody wants to touch. It doesn&apos;t have
-                  to be that way.
+                  We don&apos;t start with code. We start with your goals, your customers and your
+                  constraints, and assemble the right mix of people to get you there.
                 </p>
                 <p>
-                  So we built a team around experienced people and honest process. The engineers and
-                  designers you meet on the first call are the ones who build your product. We
-                  show working software every week, and we design for the team that will maintain
-                  it long after launch.
+                  Too many projects run late, cost more than promised and leave clients guessing.
+                  So we built a team around experienced people and honest process. The product
+                  owners, designers, developers and project managers you meet on the first call are
+                  the ones who deliver your project, and you see real progress every week.
                 </p>
                 <p>
-                  Over 12+ years of engineering and leadership experience, that approach has
-                  shipped telehealth platforms, workforce marketplaces, fintech tools and
-                  everything in between, for clients across Canada and beyond.
+                  With 25+ years of industry and leadership experience, that approach has delivered
+                  telehealth platforms, workforce marketplaces, fintech tools and everything in
+                  between, for clients across Canada and beyond.
                 </p>
               </div>
             </div>
@@ -87,9 +86,9 @@ export default function AboutPage() {
               </p>
               <ul className="pt-studio-list">
                 {[
-                  ["senior", "Experienced engineers on every project"],
-                  ["eye", "Working software every week"],
-                  ["key", "You own 100% of the code and IP"],
+                  ["senior", "The right experts for every stage"],
+                  ["eye", "Working results every week"],
+                  ["key", "You own 100% of the work and IP"],
                   ["globe", "Collaborating across timezones"],
                 ].map(([icon, text]) => (
                   <li key={text}>
@@ -103,6 +102,65 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Team composition */}
+      <section className="pt-section pt-soft" aria-labelledby="roles-title">
+        <div className="pt-container">
+          <div className="pt-head" data-reveal>
+            <div className="pt-eyebrow">Who&apos;s on your team</div>
+            <h2 className="pt-h2" id="roles-title">
+              A complete company, not just a dev shop
+            </h2>
+            <p className="pt-lead">
+              Every project is delivered by a cross-functional team, backed by the people who keep
+              Primo Techworks running smoothly.
+            </p>
+          </div>
+          <div className="pt-roles">
+            {[
+              {
+                t: "On your project",
+                d: "The people you work with day to day.",
+                items: [
+                  ["product", "Strategy & business analysis"],
+                  ["eye", "Product ownership"],
+                  ["calendar", "Project management"],
+                  ["design", "UX/UI design"],
+                  ["ai", "Development & AI"],
+                  ["shield", "Quality assurance"],
+                ],
+              },
+              {
+                t: "Behind the scenes",
+                d: "The functions that make us a dependable partner.",
+                items: [
+                  ["team", "Talent & HR"],
+                  ["spark", "Marketing"],
+                  ["globe", "Sales & partnerships"],
+                  ["key", "Finance & operations"],
+                ],
+              },
+            ].map((g, i) => (
+              <div key={g.t} className="pt-card pt-roles-card" data-reveal style={{ "--d": `${i * 0.1}s` }}>
+                <h3 className="pt-h3" style={{ fontSize: 21, marginBottom: 6 }}>
+                  {g.t}
+                </h3>
+                <p style={{ marginBottom: 22 }}>{g.d}</p>
+                <ul>
+                  {g.items.map(([icon, label]) => (
+                    <li key={label}>
+                      <span className="pt-icon">
+                        <Icon name={icon} size={18} />
+                      </span>
+                      {label}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <StatsSection dark />
 
       {/* Mission & values */}
@@ -111,10 +169,10 @@ export default function AboutPage() {
           <div className="pt-head" data-reveal>
             <div className="pt-eyebrow">What we believe</div>
             <h2 className="pt-h2" id="values-title">
-              Our mission is to make great software accessible to every ambitious team
+              Our mission is to make great solutions accessible to every ambitious business
             </h2>
             <p className="pt-lead">
-              World-class engineering shouldn&apos;t be reserved for companies with Silicon Valley
+              World-class expertise shouldn&apos;t be reserved for companies with Silicon Valley
               budgets. These principles guide every project we take on.
             </p>
           </div>
@@ -140,7 +198,7 @@ export default function AboutPage() {
                 The people behind Primo
               </h2>
               <p className="pt-lead">
-                A leadership team that brings together business experience, hands-on engineering
+                A leadership team that brings together business experience, technology expertise
                 and a people-first culture.
               </p>
             </div>

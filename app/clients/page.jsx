@@ -31,7 +31,7 @@ export default function WorkPage() {
             </h1>
             <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 640 }}>
               Healthcare, workforce, fintech, productivity and local business: real products,
-              live in production, each with its own engineering story.
+              live in production, each with its own story.
             </p>
           </div>
         </div>

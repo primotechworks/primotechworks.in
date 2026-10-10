@@ -31,7 +31,7 @@ export const NAV = [
 ];
 
 export const STATS = [
-  { n: 12, suffix: "+", l: "Years of engineering and leadership experience" },
+  { n: 25, suffix: "+", l: "Years of industry and leadership experience" },
   { n: 50, suffix: "+", l: "Applications, platforms and systems delivered or improved" },
   { n: 10, suffix: "+", l: "Industries served, from healthcare to fintech" },
   { n: 100, suffix: "%", l: "On-time project delivery" },
@@ -64,7 +64,7 @@ export const WHY = [
   {
     icon: "senior",
     t: "Experienced people, start to finish",
-    d: "You work directly with experienced engineers and designers, not account managers and a rotating bench of juniors.",
+    d: "You work directly with experienced professionals, from product owners to designers and developers, not layers of account managers.",
   },
   {
     icon: "product",
@@ -104,7 +104,7 @@ export const MODELS = [
     t: "Dedicated team",
     best: "Best for growing products",
     d: "A dedicated, cross-functional team that works as an extension of yours, month to month.",
-    items: ["Engineers, designer & lead", "Flexible monthly capacity", "Your tools & rituals", "Scale up or down any time"],
+    items: ["Product owner, designers & developers", "Flexible monthly capacity", "Your tools & rituals", "Scale up or down any time"],
     featured: true,
   },
   {
@@ -129,7 +129,7 @@ export const HOME_FAQS = [
   },
   {
     q: "Do you work with startups or established companies?",
-    a: "Both. We help founders validate ideas and launch MVPs, help growing businesses modernise and scale, and support enterprise teams with architecture, engineering and hiring.",
+    a: "Both. We help founders validate ideas and launch MVPs, help growing businesses modernise and scale, and support enterprise teams with strategy, technology and hiring.",
   },
   {
     q: "Will we own the source code and IP?",

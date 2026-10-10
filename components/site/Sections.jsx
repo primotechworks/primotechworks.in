@@ -123,7 +123,7 @@ export function WorkStrip() {
     <section className="pt-section-sm" aria-label="Clients and products we've built" style={{ paddingTop: 24 }}>
       <div className="pt-container">
         <p className="pt-strip-label">
-          Products we&apos;ve designed, engineered and launched ·{" "}
+          Products we&apos;ve planned, designed and launched ·{" "}
           <Link href="/clients" className="pt-strip-link">
             See our clients
           </Link>

@@ -45,7 +45,7 @@ export const faqDataMain = [
     id: 8,
     question: "Do you work with established teams or only full projects?",
     answer:
-      "Both. We can lead an entire project from concept to launch, or embed alongside your existing team to provide senior‑level engineering, architecture, or design support.",
+      "Both. We can lead an entire project from concept to launch, or embed alongside your existing team to provide experienced product, technology, or design support.",
   },
   {
     id: 9,
@@ -111,7 +111,7 @@ export const faqDataMain = [
     id: 19,
     question: "What makes your team different?",
     answer:
-      "We bring senior‑level expertise, thoughtful design, and a commitment to clarity. Clients work directly with experienced engineers and strategists, not layers of account managers or junior staff.",
+      "We bring senior‑level expertise, thoughtful design, and a commitment to clarity. Clients work directly with experienced product owners, designers, developers and strategists, not layers of account managers or junior staff.",
   },
   {
     id: 20,

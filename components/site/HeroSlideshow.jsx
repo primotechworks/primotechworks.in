@@ -7,7 +7,7 @@ const SLIDES = [
   { label: "Idea to launch", Visual: HeroIdeaToLaunch },
   { label: "Grow online", Visual: HeroBusinessGrowth },
   { label: "Built together", Visual: HeroBuiltTogether },
-  { label: "Engineered right", Visual: HeroVisual },
+  { label: "Built right", Visual: HeroVisual },
 ];
 const INTERVAL = 6500;
 const CANVAS_W = 560;

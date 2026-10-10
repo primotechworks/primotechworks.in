@@ -60,8 +60,8 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="pt-lead" data-reveal style={{ "--d": "0.12s", maxWidth: 540 }}>
-                We are a team of passionate developers, designers and strategists building web
-                apps, mobile apps and AI-powered products for startups, growing businesses and
+                A complete team of strategists, product owners, designers and technologists,
+                building smart, innovative solutions for startups, growing businesses and
                 enterprise teams.
               </p>
               <div className="pt-actions" style={{ marginTop: 36, "--d": "0.16s" }} data-reveal>
@@ -74,7 +74,7 @@ export default function HomePage() {
               </div>
               <div className="pt-trust" data-reveal style={{ "--d": "0.2s" }}>
                 <span>
-                  <Icon name="check" size={18} strokeWidth={2} /> 12+ years of engineering
+                  <Icon name="check" size={18} strokeWidth={2} /> 25+ years of industry experience
                 </span>
                 <span>
                   <Icon name="check" size={18} strokeWidth={2} /> Products live across Canada
@@ -104,7 +104,7 @@ export default function HomePage() {
                 End-to-end software solutions, under one roof
               </h2>
               <p className="pt-lead">
-                Strategy, design, engineering and AI, delivered by one passionate team that owns the
+                Strategy, product, design, technology and AI, delivered by one complete team that owns the
                 outcome with you.
               </p>
             </div>
