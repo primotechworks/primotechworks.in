@@ -60,9 +60,9 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="pt-lead" data-reveal style={{ "--d": "0.12s", maxWidth: 540 }}>
-                Primo Techworks designs, engineers and scales web apps, mobile apps and AI-powered
-                products for startups, growing businesses and enterprise teams, with senior people
-                on every project.
+                We are a team of passionate developers, designers and strategists building web
+                apps, mobile apps and AI-powered products for startups, growing businesses and
+                enterprise teams.
               </p>
               <div className="pt-actions" style={{ marginTop: 36, "--d": "0.16s" }} data-reveal>
                 <Link href="/contact" className="pt-btn pt-btn-brand">
@@ -104,7 +104,7 @@ export default function HomePage() {
                 End-to-end software solutions, under one roof
               </h2>
               <p className="pt-lead">
-                Strategy, design, engineering and AI, delivered by one senior team that owns the
+                Strategy, design, engineering and AI, delivered by one passionate team that owns the
                 outcome with you.
               </p>
             </div>

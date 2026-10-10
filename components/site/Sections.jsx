@@ -208,13 +208,14 @@ export function WhySection() {
     <section className="pt-section" aria-labelledby="why-title">
       <div className="pt-container">
         <div className="pt-head" data-reveal>
-          <div className="pt-eyebrow">Why Primo Techworks</div>
+          <div className="pt-eyebrow">Why us</div>
           <h2 className="pt-h2" id="why-title">
-            The senior team you&apos;d hire, if you could
+            Why choose Primo Techworks?
           </h2>
           <p className="pt-lead">
-            We combine the craft of a product company with the flexibility of a dedicated partner, and we
-            treat your product like it&apos;s our own.
+            We are committed to delivering high-quality solutions that meet our clients&apos; needs
+            and exceed their expectations, with a focus on quality, innovation and continuous
+            improvement.
           </p>
         </div>
         <div className="pt-why">

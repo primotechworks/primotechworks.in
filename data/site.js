@@ -63,7 +63,7 @@ export const PROCESS = [
 export const WHY = [
   {
     icon: "senior",
-    t: "Senior people, start to finish",
+    t: "Experienced people, start to finish",
     d: "You work directly with experienced engineers and designers, not account managers and a rotating bench of juniors.",
   },
   {
@@ -103,7 +103,7 @@ export const MODELS = [
   {
     t: "Dedicated team",
     best: "Best for growing products",
-    d: "A senior, cross-functional team that works as an extension of yours, month to month.",
+    d: "A dedicated, cross-functional team that works as an extension of yours, month to month.",
     items: ["Engineers, designer & lead", "Flexible monthly capacity", "Your tools & rituals", "Scale up or down any time"],
     featured: true,
   },
@@ -129,7 +129,7 @@ export const HOME_FAQS = [
   },
   {
     q: "Do you work with startups or established companies?",
-    a: "Both. We help founders validate ideas and launch MVPs, help growing businesses modernise and scale, and support enterprise teams with architecture, senior engineering and hiring.",
+    a: "Both. We help founders validate ideas and launch MVPs, help growing businesses modernise and scale, and support enterprise teams with architecture, engineering and hiring.",
   },
   {
     q: "Will we own the source code and IP?",
@@ -137,7 +137,7 @@ export const HOME_FAQS = [
   },
   {
     q: "Can you work with our existing codebase or team?",
-    a: "Absolutely. We start with a short technical audit, then either improve what's there or embed alongside your team to add senior capacity.",
+    a: "Absolutely. We start with a short technical audit, then either improve what's there or embed alongside your team to add experienced capacity.",
   },
   {
     q: "How soon can we start?",

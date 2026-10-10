@@ -10,7 +10,7 @@ export const services = [
     h1: "Web app development for products that need to scale",
     metaTitle: "Web App Development Company | SaaS & Custom Web Applications",
     metaDescription:
-      "Custom web application and SaaS development with React, Next.js, Node.js and Python. Senior engineers in India building fast, secure, scalable web apps for clients worldwide.",
+      "Custom web application and SaaS development with React, Next.js, Node.js and Python. Our team in India builds fast, secure, scalable web apps for clients worldwide.",
     intro:
       "From a first MVP to a multi-tenant SaaS platform, we design and build web applications that are fast, secure and easy to evolve, with clean architecture your future team will thank you for.",
     problems: [
@@ -143,9 +143,9 @@ export const services = [
     h1: "Software architecture and technical consulting",
     metaTitle: "Software Architecture & Technical Consulting | Fractional CTO",
     metaDescription:
-      "Senior software architecture consulting: system design, cloud architecture on AWS and GCP, technical due diligence, code audits, modernisation and fractional CTO services.",
+      "Software architecture consulting: system design, cloud architecture on AWS and GCP, technical due diligence, code audits, modernisation and fractional CTO services.",
     intro:
-      "Senior architects who've built and run real systems. We help you make the big technical decisions with confidence, and avoid the expensive ones you'll regret in two years.",
+      "Experienced architects who've built and run real systems. We help you make the big technical decisions with confidence, and avoid the expensive ones you'll regret in two years.",
     problems: [
       "You're about to build something big and want the architecture right first",
       "Your system is slow, costly to run or keeps breaking",
@@ -225,7 +225,7 @@ export const services = [
     h1: "Engineering leadership, hiring and delivery consulting",
     metaTitle: "Engineering Leadership, Tech Hiring & Delivery Consulting",
     metaDescription:
-      "Build and scale engineering teams: technical hiring frameworks, interview loops, mentoring, agile delivery and process consulting from senior engineering leaders.",
+      "Build and scale engineering teams: technical hiring frameworks, interview loops, mentoring, agile delivery and process consulting from experienced engineering leaders.",
     intro:
       "Great products come from great teams. We help you hire the right engineers, grow the ones you have, and build delivery habits that keep work predictable.",
     problems: [

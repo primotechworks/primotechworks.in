@@ -13,7 +13,7 @@ import { services } from "@/data/services";
 export const metadata = {
   title: "Software Development Services: Web, Mobile, AI & Consulting",
   description:
-    "Web app development, iOS and Android apps, AI and automation, software architecture consulting, UX/UI design and engineering leadership, from one senior team.",
+    "Web app development, iOS and Android apps, AI and automation, software architecture consulting, UX/UI design and engineering leadership: innovative software solutions from one passionate team.",
   alternates: { canonical: "/services" },
 };
 
@@ -57,7 +57,7 @@ export default function ServicesPage() {
               Everything you need to design, build and scale <span className="pt-gradient-text">great software</span>
             </h1>
             <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 640 }}>
-              Six disciplines, one senior team. Engage us for a single service or the whole
+              Six disciplines, one passionate team. Engage us for a single service or the whole
               product lifecycle, from first idea to millions of users.
             </p>
           </div>

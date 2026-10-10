@@ -106,7 +106,7 @@ export default async function ServicePage({ params }) {
                 Everything needed to ship with confidence
               </h2>
               <p className="pt-lead">
-                Senior people across strategy, design and engineering, with clear deliverables at
+                Experienced developers, designers and strategists, with clear deliverables at
                 every stage and no surprises.
               </p>
             </div>

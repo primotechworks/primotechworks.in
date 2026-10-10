@@ -63,7 +63,7 @@ export default function AboutPage() {
                   to be that way.
                 </p>
                 <p>
-                  So we built a team around senior people and honest process. The engineers and
+                  So we built a team around experienced people and honest process. The engineers and
                   designers you meet on the first call are the ones who build your product. We
                   show working software every week, and we design for the team that will maintain
                   it long after launch.
@@ -87,7 +87,7 @@ export default function AboutPage() {
               </p>
               <ul className="pt-studio-list">
                 {[
-                  ["senior", "Senior engineers on every project"],
+                  ["senior", "Experienced engineers on every project"],
                   ["eye", "Working software every week"],
                   ["key", "You own 100% of the code and IP"],
                   ["globe", "Collaborating across timezones"],
