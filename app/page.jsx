@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PageShell from "@/components/site/PageShell";
 import Icon, { Arrow } from "@/components/site/Icon";
-import HeroVisual from "@/components/site/HeroVisual";
+import HeroSlideshow from "@/components/site/HeroSlideshow";
 import {
   CtaSection,
   FaqSection,
@@ -86,7 +86,7 @@ export default function HomePage() {
             </div>
 
             <div data-reveal="fade" style={{ "--d": "0.15s" }}>
-              <HeroVisual />
+              <HeroSlideshow />
             </div>
           </div>
         </div>

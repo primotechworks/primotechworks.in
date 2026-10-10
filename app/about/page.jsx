@@ -139,15 +139,28 @@ export default function AboutPage() {
               <h2 className="pt-h2" id="team-title">
                 The people behind Primo
               </h2>
+              <p className="pt-lead">
+                A leadership team that brings together business experience, hands-on engineering
+                and a people-first culture.
+              </p>
             </div>
             <div className="pt-grid-3">
               {TEAM.map((p) => (
                 <figure className="pt-card pt-person" key={p.name} data-reveal>
-                  {p.photo && <Image src={p.photo} alt={p.name} width={480} height={560} sizes="(max-width: 991px) 100vw, 380px" />}
+                  {p.photo ? (
+                    <Image src={p.photo} alt={p.name} width={480} height={560} sizes="(max-width: 991px) 100vw, 380px" />
+                  ) : (
+                    <div className="pt-avatar" aria-hidden="true">
+                      {p.name
+                        .split(" ")
+                        .map((w) => w[0])
+                        .join("")}
+                    </div>
+                  )}
                   <figcaption>
                     <h3 className="pt-h3">{p.name}</h3>
                     <div className="role">{p.role}</div>
-                    <p>{p.bio}</p>
+                    {p.bio && <p>{p.bio}</p>}
                     {p.linkedin && (
                       <a href={p.linkedin} target="_blank" rel="noopener" className="pt-link" style={{ marginTop: 16 }}>
                         LinkedIn <Icon name="arrowUpRight" size={16} />

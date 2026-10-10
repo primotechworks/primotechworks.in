@@ -147,7 +147,11 @@ export const HOME_FAQS = [
 
 // Founder / team profiles for the About page. The section stays hidden while empty.
 // Shape: { name, role, photo: "/assets/images/team/name.jpg", bio, linkedin }
-export const TEAM = [];
+export const TEAM = [
+  { name: "Pradyut Modi", role: "President", linkedin: "https://www.linkedin.com/in/pradyutmodi1961/" },
+  { name: "Jay Modi", role: "Founder & CTO", linkedin: "https://www.linkedin.com/in/jaymodi27/" },
+  { name: "Nidhi Karia", role: "Chief HR", linkedin: "https://www.linkedin.com/in/nidhi-karia-37442453/" },
+];
 
 export const VALUES = [
   { t: "Clarity over cleverness", d: "Simple architecture, plain-English updates and honest estimates. If it's complicated, we explain why." },
