@@ -150,8 +150,8 @@ export const HOME_FAQS = [
 // Photos: 640x640 black & white, tone-matched (see resources/Team for originals).
 export const TEAM = [
   { name: "Pradyut Modi", role: "President", photo: "/assets/images/team/pradyut-modi.webp", linkedin: "https://www.linkedin.com/in/pradyutmodi1961/" },
-  { name: "Jay Modi", role: "Founder & CTO", photo: "/assets/images/team/jay-modi.webp", linkedin: "https://www.linkedin.com/in/jaymodi27/" },
-  { name: "Nidhi Karia", role: "Chief HR", photo: "/assets/images/team/nidhi-karia.webp", linkedin: "https://www.linkedin.com/in/nidhi-karia-37442453/" },
+  { name: "Jay Modi", role: "Chief Technology Officer", photo: "/assets/images/team/jay-modi.webp", linkedin: "https://www.linkedin.com/in/jaymodi27/" },
+  { name: "Nidhi Karia", role: "Chief Human Resources Officer", photo: "/assets/images/team/nidhi-karia.webp", linkedin: "https://www.linkedin.com/in/nidhi-karia-37442453/" },
 ];
 
 export const VALUES = [
