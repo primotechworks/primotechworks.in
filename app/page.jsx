@@ -6,10 +6,8 @@ import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Home || Primo Techworks",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Primo Techworks builds smarter digital products: software engineering, technical architecture, UX/UI and delivery consulting from Ahmedabad, India.",
 };
 export default function Home9MainDemoMultiPage() {
   return (
@@ -32,7 +30,7 @@ export default function Home9MainDemoMultiPage() {
               <Hero />
             </section>
 
-            <Home />
+            <Home onePage />
           </main>
           <footer className="page-section footer position-relative overflow-hidden pb-30">
             <div className="bg-shape-4">

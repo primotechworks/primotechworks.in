@@ -2,26 +2,18 @@ import React from "react";
 
 import Facts from "./Facts";
 import Service from "./Service";
-import Portfolio from "./Portfolio";
 import Image from "next/image";
-import Testimonials from "./Testimonials";
-import Blog from "./Blog";
-import Newsletter from "./Newsletter";
 import Contact from "./Contact";
 import Link from "next/link";
-import TestimonialsDark from "./TestimonialsDark";
-import ContactDark from "./ContactDark";
 import { features4 } from "@/data/features";
 import Features from "./Features";
 
-export default function Home9({ onePage = false, dark = false }) {
+export default function Home9({ onePage = false }) {
   return (
     <>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+      <hr className="mt-0 mb-0" />
       <section
-        className={`page-section scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
+        className="page-section scrollSpysection"
         id="about"
       >
         <div className="container position-relative">
@@ -71,7 +63,7 @@ export default function Home9({ onePage = false, dark = false }) {
                   ) : (
                     <>
                       <Link
-                        href={`/contact${dark ? "-dark" : ""}`}
+                        href="/contact"
                         className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                       >
                         <span>Start a Project</span>
@@ -109,7 +101,7 @@ export default function Home9({ onePage = false, dark = false }) {
                     <>
                       {" "}
                       <Link
-                        href={`/about${dark ? "-dark" : ""}`}
+                        href="/about"
                         className="link-hover-anim ms-2 ms-sm-5 me-2"
                         data-link-animate="y"
                       >
@@ -144,7 +136,7 @@ export default function Home9({ onePage = false, dark = false }) {
                   <div className="composition-5-decoration opacity-065">
                     <Image
                       src="/assets/images/demo-slick/decoration-1.svg"
-                      alt="resonance template image"
+                      alt=""
                       width={228}
                       height={228}
                     />
@@ -153,7 +145,7 @@ export default function Home9({ onePage = false, dark = false }) {
                     <div className="composition-5-image-1-inner">
                       <Image
                         src="/assets/images/primotechworks/hs-image-3.png"
-                        alt="Image Description"
+                        alt="Primo Techworks team planning a project together around a laptop"
                         width={850}
                         height={914}
                         className="wow scaleOutIn"
@@ -165,7 +157,7 @@ export default function Home9({ onePage = false, dark = false }) {
                     <div className="composition-5-image-2-inner">
                       <Image
                         src="/assets/images/primotechworks/hs-image-7.png"
-                        alt="Image Description"
+                        alt="Cloud servers connected to analytics, security and data storage"
                         width={400}
                         height={400}
                         className="wow scaleOutIn"
@@ -181,9 +173,7 @@ export default function Home9({ onePage = false, dark = false }) {
         </div>
       </section>
       <section
-        className={`page-section ${
-          dark ? "bg-dark-1 bg-dark-alpha light-content" : "bg-light-alpha-90"
-        }  bg-scroll`}
+        className="page-section bg-light-alpha-90 bg-scroll"
         style={{
           backgroundImage: "url(/assets/images/demo-slick/section-bg-1.jpg)",
         }}
@@ -191,9 +181,7 @@ export default function Home9({ onePage = false, dark = false }) {
         <Facts />
       </section>
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
+        className="page-section scrollSpysection"
         id="services"
       >
         <div className="container position-relative">
@@ -225,7 +213,7 @@ Our process turns intricate challenges into elegant, dependable solutions built 
                   <>
                     {" "}
                     <Link
-                      href={`/contact${dark ? "-dark" : ""}`}
+                      href="/contact"
                       className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                     >
                       <span>Request a Quote</span>
@@ -259,14 +247,12 @@ Our process turns intricate challenges into elegant, dependable solutions built 
           {/* End Features Grid */}
         </div>
       </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+      <hr className="mt-0 mb-0" />
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
+        className="page-section scrollSpysection"
         id="contact"
       >
-        {dark ? <ContactDark /> : <Contact />}
+        <Contact />
       </section>
     </>
   );

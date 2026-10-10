@@ -22,18 +22,18 @@ export default function Footer8() {
             <div className="mb-30">
               <Image
                 src="/assets/images/primo-techworks-banner-logo.png"
-                alt="Your Company Logo"
+                alt="Primo Techworks"
                 width={106}
                 height={36}
                 style={{ width: '100%', height: 'auto'}}
                 className="light-mode-logo"
               />
               <Image
-                src="/assets/images/demo-slick/logo-white.svg"
-                alt="Your Company Logo"
+                src="/assets/images/primo-techworks-banner-logo.png"
+                alt="Primo Techworks"
                 width={106}
                 height={36}
-                style={{ width: '100%', height: 'auto'}}
+                style={{ width: '100%', height: 'auto', filter: 'brightness(0) invert(1)'}}
                 className="dark-mode-logo"
               />
             </div>
@@ -44,7 +44,7 @@ export default function Footer8() {
               {/* Icon Code */}
               <i className="mi-mobile" />{" "}
               {/* End Icon Code */}
-              <a href="tel:+916352540698">+91 98490 21468</a>
+              <a href="tel:+919849021468">+91 98490 21468</a>
             </div>
             <div className="clearlinks">
               {/* Icon Code */}

@@ -7,13 +7,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "Portfolio || Primo Techworks",
+  title: "Portfolio",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Selected work by Primo Techworks.",
+  // Placeholder template content; hidden from nav and search until real content exists.
+  robots: { index: false, follow: false },
 };
 const onePage = false;
-const dark = false;
 export default function SlickPortfolioPage() {
   return (
     <>
@@ -56,9 +56,7 @@ export default function SlickPortfolioPage() {
               </div>
             </section>
             <section
-              className={`page-section  scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="portfolio"
             >
               <div className="container position-relative">
@@ -69,9 +67,7 @@ export default function SlickPortfolioPage() {
             <section className="page-section pt-0">
               <div className="container">
                 <div
-                  className={`small-section ${
-                    dark ? "bg-dark-2 light-content" : "bg-gray-light-1"
-                  }  ps-4 ps-lg-0 pe-4 pe-lg-0 round position-relative overflow-hidden`}
+                  className="small-section bg-gray-light-1 ps-4 ps-lg-0 pe-4 pe-lg-0 round position-relative overflow-hidden"
                 >
                   {/* Decoration Circles */}
                   <div className="decoration-12" />
@@ -92,7 +88,7 @@ export default function SlickPortfolioPage() {
                         </div>
                         <div className="col-md-5 col-lg-4 text-center text-md-end pt-2">
                           <Link
-                            href={`/slick-portfolio${dark ? "-dark" : ""}`}
+                            href="/portfolio"
                             className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim"
                           >
                             <span>View all works</span>

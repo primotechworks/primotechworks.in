@@ -8,13 +8,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "Services || Primo Techworks",
+  title: "Services",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Software engineering, technical architecture, UX/UI refinement, hiring frameworks and delivery consulting. See how Primo Techworks helps teams design, build and scale.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickServicesPage() {
   return (
     <>
@@ -50,9 +48,7 @@ export default function SlickServicesPage() {
               </div>
             </section>
             <section
-              className={`page-section  scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="services"
             >
               <div className="container position-relative">
@@ -70,7 +66,7 @@ export default function SlickServicesPage() {
                     </p>
                     <div className="local-scroll">
                       <Link
-                        href={`/slick-contact${dark ? "-dark" : ""}`}
+                        href="/contact"
                         className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                       >
                         <span>Request a Quote</span>
@@ -100,11 +96,9 @@ export default function SlickServicesPage() {
                 {/* End Features Grid */}
               </div>
             </section>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+            <hr className="mt-0 mb-0" />
             <section
-              className={`page-section  ${
-                dark ? "bg-dark-1 light-content" : ""
-              }`}
+              className="page-section"
             >
               <div className="container position-relative">
                 <div className="row">
@@ -121,7 +115,7 @@ export default function SlickServicesPage() {
                           width={386}
                           height={400}
                           src="/assets/images/primotechworks/hs-image-7.png"
-                          alt="Image Description"
+                          alt="Cloud servers connected to analytics, security and data storage"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
                           data-wow-offset={255}
@@ -132,7 +126,7 @@ export default function SlickServicesPage() {
                           width={810}
                           height={512}
                           src="/assets/images/primotechworks/hs-image-2.png"
-                          alt="Image Description"
+                          alt="Team collaborating around a digital dashboard with security, cloud and AI elements"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
                           data-wow-offset={134}
@@ -148,7 +142,7 @@ export default function SlickServicesPage() {
                           width={386}
                           height={500}
                           src="/assets/images/primotechworks/hs-image-8.png"
-                          alt="Image Description"
+                          alt="AI brain connected to data, analytics, security and cloud services"
                           className="wow scaleOutIn"
                           data-wow-duration="1.2s"
                           data-wow-offset={0}

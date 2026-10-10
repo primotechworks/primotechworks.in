@@ -1,75 +1,53 @@
-"use client";
-import { useEffect } from "react";
-import "swiper/css";
-import "../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
-import "swiper/css/effect-fade";
-
 import "photoswipe/dist/photoswipe.css";
-import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
+import "../public/assets/css/styles.css";
 
-import "tippy.js/dist/tippy.css";
-import { init_wow } from "@/utlis/initWowjs";
-import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import ClientInit from "@/components/common/ClientInit";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/data/site";
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-jakarta",
+});
+
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Software Engineering & Technology Consulting`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "./" },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    url: "./",
+    images: [
+      {
+        url: "/assets/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Primo Techworks team working on software, cloud and AI solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@primotechworks",
+  },
+};
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
-
-  useEffect(() => {
-    init_wow();
-    parallaxMouseMovement();
-    var mainNav = document.querySelector(".main-nav");
-    if (mainNav?.classList.contains("transparent")) {
-      mainNav.classList.add("js-transparent");
-    } else if (!mainNav?.classList?.contains("dark")) {
-      mainNav?.classList.add("js-no-transparent-white");
-    }
-
-    window.addEventListener("scroll", headerChangeOnScroll);
-    parallaxScroll();
-    return () => {
-      window.removeEventListener("scroll", headerChangeOnScroll);
-    };
-  }, [path]);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Import the script only on the client side
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
-      });
-    }
-  }, []);
-
   return (
-    <html lang="en" className="no-mobile no-touch ">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&family=Poppins&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="appear-animate body">{children}</body>
+    <html lang="en" className={`no-mobile no-touch ${jakarta.variable}`}>
+      <body className="appear-animate body">
+        <ClientInit />
+        {children}
+      </body>
     </html>
   );
 }

@@ -98,3 +98,10 @@ a {
 html {
   scroll-behavior: smooth !important;
 }
+
+/* Self-hosted Plus Jakarta Sans via next/font (see app/layout.js) */
+:root,
+.theme-slick {
+  --font-global: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-alt: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+}

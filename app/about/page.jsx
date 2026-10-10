@@ -1,21 +1,17 @@
 import Footer8 from "@/components/footers/Footer8";
 import Header9 from "@/components/headers/Header9";
 import Facts from "@/components/homes/home-9/Facts";
-import Testimonials from "@/components/homes/home-9/Testimonials";
-import TestimonialsDark from "@/components/homes/home-9/TestimonialsDark";
 import { features4 } from "@/data/features";
 import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "About || Primo Techworks",
+  title: "About Us",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Meet Primo Techworks: a team of engineers, designers and strategists with 12+ years of experience building reliable software for businesses across industries.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickAboutPage() {
   return (
     <>
@@ -51,9 +47,7 @@ export default function SlickAboutPage() {
               </div>
             </section>
             <section
-              className={`page-section scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="about"
             >
               <div className="container position-relative">
@@ -101,7 +95,7 @@ export default function SlickAboutPage() {
                       {/* End Features List */}
                       <div className="local-scroll wch-unset">
                         <Link
-                          href={`/contact${dark ? "-dark" : ""}`}
+                          href="/contact"
                           className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
                         >
                           <span>Start a Project</span>
@@ -126,7 +120,7 @@ export default function SlickAboutPage() {
                           <div className="composition-5-image-1-inner">
                             <Image
                               src="/assets/images/primotechworks/hs-image-5.png"
-                              alt="Image Description"
+                              alt="Engineers and consultants working on security, analytics and AI solutions"
                               width={850}
                               height={914}
                               className="wow scaleOutIn"
@@ -138,7 +132,7 @@ export default function SlickAboutPage() {
                           <div className="composition-5-image-2-inner">
                             <Image
                               src="/assets/images/primotechworks/hs-image-1.png"
-                              alt="Image Description"
+                              alt="Two team members reviewing cloud security and analytics on a laptop"
                               width={400}
                               height={400}
                               className="wow scaleOutIn"
@@ -154,11 +148,7 @@ export default function SlickAboutPage() {
               </div>
             </section>
             <section
-              className={`page-section ${
-                dark
-                  ? "bg-dark-1 bg-dark-alpha light-content"
-                  : "bg-light-alpha-90"
-              }  bg-scroll`}
+              className="page-section bg-light-alpha-90 bg-scroll"
               style={{
                 backgroundImage:
                   "url(/assets/images/demo-slick/section-bg-1.jpg)",

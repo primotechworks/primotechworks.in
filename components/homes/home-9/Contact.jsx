@@ -1,8 +1,48 @@
 "use client";
 import { contactItems } from "@/data/contact";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    website: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
+    setResult(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setResult({
+          type: "success",
+          text: "Message sent. We'll get back to you shortly.",
+        });
+        setForm({ name: "", email: "", message: "", website: "" });
+      } else {
+        setResult({
+          type: "error",
+          text: data?.error || "Failed to send message.",
+        });
+      }
+    } catch (err) {
+      setResult({ type: "error", text: "Network error. Try again later." });
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <div className="container position-relative">
       <div className="row">
@@ -71,7 +111,7 @@ export default function Contact() {
             <div className="col-md-5 d-flex align-items-stretch pt-40 pt-sm-0 pb-40 pb-sm-0 mb-sm-30">
               <div className="map-boxed-1 d-flex align-items-stretch">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8576429901987!2d72.50819691247453!3d23.028998579082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b370fdf7101%3A0x168e6d8d1195ecf8!2sPanchgini%20Apartment%2C%20Ramdevnagar%20Rd%2C%20Satellite%2C%20Ahmedabad%2C%20Gujarat%20380015%2C%20India!5e0!3m2!1sen!2sus!4v1775460391263!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8576429901987!2d72.50819691247453!3d23.028998579082494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b370fdf7101%3A0x168e6d8d1195ecf8!2sPanchgini%20Apartment%2C%20Ramdevnagar%20Rd%2C%20Satellite%2C%20Ahmedabad%2C%20Gujarat%20380015%2C%20India!5e0!3m2!1sen!2sus!4v1775460391263!5m2!1sen!2sus"
                   width={600}
                   height={450}
                   style={{ border: 0 }}
@@ -88,10 +128,25 @@ export default function Contact() {
                 <h4 className="h3 mb-40 mb-sm-30">Start a Conversation</h4>
                 {/* Contact Form */}
                 <form
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={handleSubmit}
                   className="form contact-form"
                   id="contact_form"
                 >
+                  {/* Honeypot: hidden from people, bots tend to fill it */}
+                  <div className="visually-hidden" aria-hidden="true">
+                    <label htmlFor="website">Website</label>
+                    <input
+                      type="text"
+                      name="website"
+                      id="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={form.website}
+                      onChange={(e) =>
+                        setForm({ ...form, website: e.target.value })
+                      }
+                    />
+                  </div>
                   {/* Name */}
                   <div className="form-group">
                     <label htmlFor="name" className="visually-hidden">
@@ -101,6 +156,10 @@ export default function Contact() {
                       type="text"
                       name="name"
                       id="name"
+                      value={form.name}
+                      onChange={(e) =>
+                        setForm({ ...form, name: e.target.value })
+                      }
                       className="input-lg input-circle form-control"
                       placeholder="Name"
                       pattern=".{3,100}"
@@ -118,6 +177,10 @@ export default function Contact() {
                       type="email"
                       name="email"
                       id="email"
+                      value={form.email}
+                      onChange={(e) =>
+                        setForm({ ...form, email: e.target.value })
+                      }
                       className="input-lg input-circle form-control"
                       placeholder="Email"
                       pattern=".{5,100}"
@@ -134,27 +197,34 @@ export default function Contact() {
                     <textarea
                       name="message"
                       id="message"
+                      value={form.message}
+                      onChange={(e) =>
+                        setForm({ ...form, message: e.target.value })
+                      }
                       className="input-lg input-circle form-control"
                       style={{ height: 130 }}
+                      maxLength={5000}
                       placeholder="Message"
-                      defaultValue={""}
+                      required
                     />
                   </div>
                   {/* Send Button */}
                   <button
+                    type="submit"
                     className="submit_btn btn btn-mod btn-color btn-large btn-full btn-circle btn-hover-anim"
                     id="submit_btn"
                     aria-controls="result"
+                    disabled={loading}
                   >
-                    <span>Send Message</span>
+                    <span>{loading ? "Sending..." : "Send Message"}</span>
                   </button>
                   {/* End Send Button */}
                   {/* Inform Tip */}
                   <div className="form-tip w-100 pt-30 mt-sm-20">
                     <i className="icon-info size-16" />
-                    All the fields are required. By sending the form you agree
-                    to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                    <a href="#">Privacy Policy</a>.
+                    All the fields are required. By sending the form you agree to the{" "}
+                    <Link href="/termsandconditions">Terms &amp; Conditions</Link> and{" "}
+                    <Link href="/privacypolicy">Privacy Policy</Link>.
                   </div>
                   {/* End Inform Tip */}
                   <div
@@ -162,7 +232,19 @@ export default function Contact() {
                     role="region"
                     aria-live="polite"
                     aria-atomic="true"
-                  />
+                  >
+                    {result && (
+                      <div
+                        className={
+                          result.type === "success"
+                            ? "text-success pt-20"
+                            : "text-danger pt-20"
+                        }
+                      >
+                        {result.text}
+                      </div>
+                    )}
+                  </div>
                 </form>
                 {/* End Contact Form */}
               </div>

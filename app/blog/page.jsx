@@ -9,13 +9,13 @@ import Image from "next/image";
 import Form6 from "@/components/newsletterForms/Form6";
 
 export const metadata = {
-  title:
-    "Blogs || Primo Techworks",
+  title: "Blog",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Articles and insights from the Primo Techworks team.",
+  // Placeholder template content; hidden from nav and search until real content exists.
+  robots: { index: false, follow: false },
 };
 const onePage = false;
-const dark = false;
 export default function SlickBlogPage() {
   return (
     <>

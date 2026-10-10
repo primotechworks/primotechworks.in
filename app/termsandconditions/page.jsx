@@ -4,13 +4,11 @@ import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Terms and Conditions || Primo Techworks",
+  title: "Terms and Conditions",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "The terms and conditions that apply to using the Primo Techworks website and services.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickTermsAndConditionsPage() {
   return (
     <>
@@ -46,9 +44,7 @@ export default function SlickTermsAndConditionsPage() {
               </div>
             </section>
             <section
-              className={`page-section scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="about"
             >
               <div className="container position-relative">

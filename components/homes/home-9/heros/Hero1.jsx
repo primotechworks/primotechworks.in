@@ -78,7 +78,7 @@ export default function Hero1() {
                   <div className="composition-4-decoration opacity-065">
                     <Image
                       src="/assets/images/demo-slick/decoration-1.svg"
-                      alt="resonance template image"
+                      alt=""
                       width={228}
                       height={228}
                     />
@@ -87,7 +87,7 @@ export default function Hero1() {
                     <div className="composition-4-image-1-inner">
                       <Image
                         src="/assets/images/primotechworks/hs-image-9.png"
-                        alt="Image Description"
+                        alt="AI network surrounded by cloud, analytics, security and innovation icons"
                         width={850}
                         height={834}
                       />
@@ -97,7 +97,7 @@ export default function Hero1() {
                     <div className="composition-4-image-2-inner">
                       <Image
                         src="/assets/images/primotechworks/hs-image-4.png"
-                        alt="Image Description"
+                        alt="Team discussing ideas with AI, cloud and analytics illustrations in the background"
                         width={570}
                         height={598}
                       />

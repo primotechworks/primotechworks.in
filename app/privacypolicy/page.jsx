@@ -4,13 +4,11 @@ import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Privacy Policy || Primo Techworks",
+  title: "Privacy Policy",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "How Primo Techworks collects, uses and protects your personal information.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickPrivacyPolicyPage() {
   return (
     <>
@@ -46,9 +44,7 @@ export default function SlickPrivacyPolicyPage() {
               </div>
             </section>
             <section
-              className={`page-section scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="about"
             >
               <div className="container position-relative">

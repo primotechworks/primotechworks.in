@@ -1,21 +1,17 @@
 import Footer8 from "@/components/footers/Footer8";
 import Header9 from "@/components/headers/Header9";
-import Blogs2 from "@/components/homes/home-9/Blogs2";
 import Contact from "@/components/homes/home-9/Contact";
-import ContactDark from "@/components/homes/home-9/ContactDark";
 import Faq from "@/components/homes/home-9/Faq";
 
 import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Contact || Primo Techworks",
+  title: "Contact Us",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Start a project with Primo Techworks. Email info@primotechworks.in, call +91 98490 21468, or send us a message. Based in Ahmedabad, India.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickContactPage() {
   return (
     <>
@@ -52,14 +48,12 @@ export default function SlickContactPage() {
             </section>
 
             <section
-              className={`page-section  scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="contact"
             >
-              {dark ? <ContactDark /> : <Contact />}
+              <Contact />
             </section>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
+            <hr className="mt-0 mb-0" />
             <section className="page-section z-index-1">
               <div className="container position-relative">
                 {/* Decorative Waves */}

@@ -5,15 +5,15 @@ import React from "react";
 import Image from "next/image";
 import { slickMultipages } from "@/data/menu";
 export const metadata = {
-  title:
-    "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Page Not Found",
+  description: "The page you are looking for doesn't exist or has been moved.",
+  robots: { index: false },
+  alternates: { canonical: null },
 };
 export default function MainAboutPage1() {
   return (
     <>
-      <div className="theme-main">
+      <div className="theme-slick">
         <div className="page" id="top">
           <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
             <Header links={slickMultipages} />

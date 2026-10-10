@@ -1,17 +1,8 @@
 "use client";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
-import Nav from "./components/Nav";
-
-const links = [
-  { href: "#home", text: "Home", className: "active" },
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
-  { href: "#contact", text: "Contact" },
-];
 import Image from "next/image";
-import LanguageSelect from "./components/LanguageSelect";
+import Link from "next/link";
+import Nav from "./components/Nav";
 
 export default function Header9({ links }) {
   return (
@@ -20,24 +11,24 @@ export default function Header9({ links }) {
               If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
               image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap position-static local-scroll">
-        <a href="#top" className="logo">
+        <Link href="/" className="logo">
           <Image
             src="/assets/images/primo-techworks-banner-logo.png"
-            alt="Primo Techworks Logo"
+            alt="Primo Techworks"
             width={106}
             height={36}
             style={{ width: '100%', height: 'auto'}}
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/demo-slick/logo-white.svg"
-            alt="Primo Techworks Logo"
+            src="/assets/images/primo-techworks-banner-logo.png"
+            alt="Primo Techworks"
             width={106}
             height={36}
-            style={{ width: '100%', height: 'auto'}}
+            style={{ width: '100%', height: 'auto', filter: 'brightness(0) invert(1)'}}
             className="dark-mode-logo"
           />
-        </a>
+        </Link>
       </div>
       {/* Mobile Menu Button */}
       <div
@@ -56,18 +47,15 @@ export default function Header9({ links }) {
           <li className="desktop-nav-display">
             <div className="vr mt-2" />
           </li>
-          {/* Languages */}
-          {/* <LanguageSelect /> */}
-          {/* End Languages */}
           <li>
-            <a href="/contact" className="opacity-1 no-hover">
+            <Link href="/contact" className="opacity-1 no-hover">
               <span
                 className="btn btn-mod btn-color-light btn-border-white-light btn-small btn-circle"
                 data-btn-animate="y"
               >
                 Get in Touch
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

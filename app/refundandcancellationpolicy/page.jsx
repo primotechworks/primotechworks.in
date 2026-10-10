@@ -4,13 +4,11 @@ import { slickMultipages } from "@/data/menu";
 import Image from "next/image";
 
 export const metadata = {
-  title:
-    "Refund And Cancellation Policy || Primo Techworks",
+  title: "Refund and Cancellation Policy",
   description:
-    "Building smarter digital futures with innovative software solutions. Explore our services and expertise in web development, mobile apps, and more.",
+    "Primo Techworks' policy on refunds and cancellations for our services.",
 };
 const onePage = false;
-const dark = false;
 export default function SlickRefundAndCancellationPage() {
   return (
     <>
@@ -46,9 +44,7 @@ export default function SlickRefundAndCancellationPage() {
               </div>
             </section>
             <section
-              className={`page-section scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
+              className="page-section scrollSpysection"
               id="about"
             >
               <div className="container position-relative">
