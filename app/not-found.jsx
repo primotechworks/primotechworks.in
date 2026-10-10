@@ -1,77 +1,49 @@
-import Footer from "@/components/footers/Footer8";
-import Header from "@/components/headers/Header9";
 import Link from "next/link";
-import React from "react";
-import Image from "next/image";
-import { slickMultipages } from "@/data/menu";
+import PageShell from "@/components/site/PageShell";
+import { Arrow } from "@/components/site/Icon";
+import { services } from "@/data/services";
+
 export const metadata = {
   title: "Page Not Found",
   description: "The page you are looking for doesn't exist or has been moved.",
   robots: { index: false },
   alternates: { canonical: null },
 };
-export default function MainAboutPage1() {
-  return (
-    <>
-      <div className="theme-slick">
-        <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
-            <Header links={slickMultipages} />
-          </nav>
-          <>
-            <main id="main">
-              {/* Home Section */}
-              <section
-                className="home-section bg-dark-1 bg-dark-alpha-0 light-content parallax-5"
-                style={{
-                  backgroundImage:
-                    "url(/assets/images/full-width-images/404-not-found.png)",
-                }}
-                id="home"
-              >
-                <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
-                  {/* Home Section Content */}
-                  <div className="home-content">
-                    <div className="row">
-                      <div className="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                        <div className="hs-wrap">
-                          <div className="wow fadeInUp" data-wow-delay=".1s">
-                            <h1 className="hs-title-12 mb-40 mb-sm-30">404</h1>
-                          </div>
-                          <div
-                            className="mb-40 mb-sm-30 wow fadeInUp"
-                            data-wow-delay=".2s"
-                          >
-                            <h2 className="section-descr mb-20">
-                              The page you were looking for could not be found.
-                            </h2>
-                          </div>
-                          <div
-                            className="local-scroll wow fadeInUp"
-                            data-wow-delay=".3s"
-                          >
-                            <Link
-                              href={`/`}
-                              className="btn btn-mod btn-w btn-round btn-medium btn-hover-anim"
-                            >
-                              <i className="mi-arrow-left size-24 align-center" />
-                              <span>Back To Home Page</span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Home Section Content */}
-                </div>
-              </section>
-              {/* End Home Section */}
-            </main>
-          </>
 
-          <Footer />
-        </div>{" "}
-      </div>
-    </>
+export default function NotFound() {
+  return (
+    <PageShell>
+      <section className="pt-hero" style={{ minHeight: "80vh", display: "flex", alignItems: "center" }} aria-labelledby="nf-title">
+        <div className="pt-grid-bg" aria-hidden="true" />
+        <div className="pt-glow" style={{ top: -200, left: "50%", marginLeft: -320 }} aria-hidden="true" />
+        <div className="pt-container pt-center">
+          <div className="pt-404" aria-hidden="true">
+            404
+          </div>
+          <h1 className="pt-h2" id="nf-title">
+            This page took a wrong turn
+          </h1>
+          <p className="pt-lead" style={{ maxWidth: 520, margin: "0 auto 36px" }}>
+            The page you&apos;re looking for doesn&apos;t exist or has moved. Here are a few good
+            places to continue.
+          </p>
+          <div className="pt-actions" style={{ justifyContent: "center", marginBottom: 48 }}>
+            <Link href="/" className="pt-btn pt-btn-brand">
+              Back to home <Arrow size={16} />
+            </Link>
+            <Link href="/contact" className="pt-btn pt-btn-ghost">
+              Contact us
+            </Link>
+          </div>
+          <div className="pt-more-svc" style={{ justifyContent: "center" }}>
+            {services.map((s) => (
+              <Link key={s.slug} href={`/services/${s.slug}`} className="pt-tag-link">
+                {s.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </PageShell>
   );
 }

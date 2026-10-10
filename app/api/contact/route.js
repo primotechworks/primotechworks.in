@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+import { BUDGET_OPTIONS, SERVICE_OPTIONS, TIMELINE_OPTIONS } from "@/data/contactOptions";
 
 const LIMITS = { name: 100, email: 100, message: 5000 };
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -42,6 +43,11 @@ export async function POST(req) {
     const name = String(body.name || "").trim();
     const email = String(body.email || "").trim();
     const message = String(body.message || "").trim();
+    const company = String(body.company || "").trim().slice(0, 120);
+    // Only accept known option values for the structured fields.
+    const services = (Array.isArray(body.services) ? body.services : []).filter((s) => SERVICE_OPTIONS.includes(s));
+    const budget = BUDGET_OPTIONS.includes(body.budget) ? body.budget : "";
+    const timeline = TIMELINE_OPTIONS.includes(body.timeline) ? body.timeline : "";
 
     // Honeypot: real users never fill this hidden field. Pretend success for bots.
     if (body.website) {
@@ -49,7 +55,7 @@ export async function POST(req) {
     }
 
     if (!name || !email || !message) {
-      return NextResponse.json({ error: "All fields are required." }, { status: 400 });
+      return NextResponse.json({ error: "Please add your name, email and a short message." }, { status: 400 });
     }
     if (
       name.length > LIMITS.name ||
@@ -81,16 +87,25 @@ export async function POST(req) {
       auth: { user, pass },
     });
 
+    const details = [
+      ["Name", name],
+      ["Email", email],
+      ["Company", company || "-"],
+      ["Services", services.join(", ") || "-"],
+      ["Budget", budget || "-"],
+      ["Timeline", timeline || "-"],
+    ];
+
     // Send from our own authenticated mailbox; the visitor goes in Reply-To.
     await transporter.sendMail({
       from: `"Primo Techworks Website" <${user}>`,
       replyTo: { name, address: email },
       to,
-      subject: `Website contact from ${name.replace(/[\r\n]+/g, " ")}`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-      html: `<p><strong>Name:</strong> ${escapeHtml(name)}</p>
-             <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-             <p><strong>Message:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
+      subject: `New enquiry: ${name.replace(/[\r\n]+/g, " ")}${company ? ` (${company.replace(/[\r\n]+/g, " ")})` : ""}`,
+      text: details.map(([k, v]) => `${k}: ${v}`).join("\n") + `\n\nMessage:\n${message}`,
+      html:
+        details.map(([k, v]) => `<p><strong>${k}:</strong> ${escapeHtml(v)}</p>`).join("") +
+        `<p><strong>Message:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
     });
 
     return NextResponse.json({ ok: true });

@@ -1,157 +1,79 @@
-import Footer8 from "@/components/footers/Footer8";
-import Header9 from "@/components/headers/Header9";
-import Blogs2 from "@/components/homes/home-9/Blogs2";
-import { categories } from "@/data/categories";
-import { tags } from "@/data/tags";
-import { archiveLinks } from "@/data/archeve";
-import { slickMultipages } from "@/data/menu";
-import Image from "next/image";
-import Form6 from "@/components/newsletterForms/Form6";
+import Link from "next/link";
+import PageShell from "@/components/site/PageShell";
+import { Arrow } from "@/components/site/Icon";
+import { Breadcrumbs, CtaSection } from "@/components/site/Sections";
 
 export const metadata = {
-  title: "Blog",
-  description:
-    "Articles and insights from the Primo Techworks team.",
-  // Placeholder template content; hidden from nav and search until real content exists.
-  robots: { index: false, follow: false },
+  title: "Insights",
+  description: "Engineering, product and AI insights from the Primo Techworks team. Coming soon.",
+  // Hidden from search until real articles are published.
+  robots: { index: false, follow: true },
 };
-const onePage = false;
-export default function SlickBlogPage() {
+
+// Planned articles. Each targets a question our buyers search for.
+const UPCOMING = [
+  { tag: "AI", t: "On-device AI: keeping sensitive audio off the cloud", d: "What we learned running speech-to-text privately in the browser and on Android." },
+  { tag: "Cost", t: "How much does it cost to build an MVP in 2026?", d: "Real ranges, what drives cost, and how to spend less without cutting corners." },
+  { tag: "Architecture", t: "Running a production system on a $0 cloud budget", d: "A free-tier architecture that works, and when it stops making sense." },
+  { tag: "AI", t: "Guardrails for LLM features that touch real money", d: "Letting AI suggest, while the system stays in charge of pay rates and dates." },
+  { tag: "Outsourcing", t: "Hiring an offshore development team: a buyer's checklist", d: "The questions to ask before you sign, from IP ownership to timezones." },
+  { tag: "Web", t: "WebAssembly in the browser: building a private PDF editor", d: "Editing, redacting and OCR-ing PDFs without a server." },
+];
+
+export default function InsightsPage() {
   return (
-    <>
-      <div className="theme-slick">
-        <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
-            <Header9 links={slickMultipages} />
-          </nav>
-          <main id="main">
-            <section
-              className="page-section bg-gradient-gray-light-1 bg-scroll overflow-hidden"
-              id="home"
-            >
-              {/* <!-- Background Shape --> */}
-              <div className="bg-shape-1 wow fadeIn">
-                <Image
-                  src="/assets/images/demo-fancy/bg-shape-1.svg"
-                  width={1443}
-                  height={844}
-                  alt=""
-                />
-              </div>
-              {/* <!-- End Background Shape --> */}
-
-              <div className="container position-relative pt-sm-40 text-center">
-                <div className="row">
-                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                    <h1 className="hs-title-10 mb-10 wow fadeInUp">
-                      Portfolio
-                    </h1>
-
-                    <p
-                      className="section-descr mb-0 wow fadeInUp"
-                      data-wow-delay="0.2s"
-                    >
-                      Explore captivating web design solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="page-section" id="blog">
-              <Blogs2 />
-            </section>
-
-            <>
-              {/* Divider */}
-              <hr className="mt-0 mb-0" />
-              {/* End Divider */}
-              {/* Section */}
-              <section className="page-section">
-                <div className="container relative">
-                  <div className="row mt-n60">
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
-                        <h3 className="widget-title">Categories</h3>
-                        <div className="widget-body">
-                          <ul className="clearlist widget-menu">
-                            {categories.map((elm, i) => (
-                              <li key={i}>
-                                <a href="#" title="">
-                                  {elm.name}
-                                </a>
-                                <small> - {elm.count} </small>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
-                        <h3 className="widget-title">Tags</h3>
-                        <div className="widget-body">
-                          <div className="tags">
-                            {tags.map((elm, i) => (
-                              <a key={i} href="">
-                                {elm.name}
-                              </a>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
-                        <h3 className="widget-title">Archive</h3>
-                        <div className="widget-body">
-                          <ul className="clearlist widget-menu">
-                            {archiveLinks.map((elm, i) => (
-                              <li key={i}>
-                                <a href="#" title="">
-                                  {elm.date}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
-                        <h3 className="widget-title">Newsletter</h3>
-                        <div className="widget-body">
-                          <div className="widget-text clearfix">
-                            <Form6 />
-                          </div>
-                        </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </>
-          </main>
-          <footer className="page-section footer position-relative overflow-hidden pb-30">
-            <div className="bg-shape-4">
-              <Image
-                src="/assets/images/demo-slick/bg-shape-4.svg"
-                width={1600}
-                height={268}
-                alt=""
-              />
+    <PageShell>
+      <section className="pt-hero pt-hero-sub" aria-labelledby="blog-hero">
+        <div className="pt-grid-bg" aria-hidden="true" />
+        <div className="pt-glow" style={{ top: -280, right: -160 }} aria-hidden="true" />
+        <div className="pt-container">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Insights", href: "/blog" },
+            ]}
+          />
+          <div style={{ maxWidth: 820 }}>
+            <div className="pt-badge" data-reveal>
+              <span className="pt-badge-dot">Coming soon</span>
+              <span className="pt-badge-text">Insights from the studio</span>
             </div>
-            <Footer8 />
-          </footer>
+            <h1 className="pt-h1" id="blog-hero" data-reveal style={{ "--d": "0.05s" }}>
+              Lessons from building <span className="pt-gradient-text">real products</span>
+            </h1>
+            <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 640 }}>
+              Practical writing on engineering, product and AI, drawn from the products we build.
+              Here&apos;s what we&apos;re working on.
+            </p>
+          </div>
         </div>
-      </div>
-    </>
+      </section>
+
+      <section className="pt-section" style={{ paddingTop: 8 }}>
+        <div className="pt-container">
+          <div className="pt-grid-3">
+            {UPCOMING.map((p, i) => (
+              <article key={p.t} className="pt-card" data-reveal style={{ "--d": `${(i % 3) * 0.08}s` }}>
+                <div className="pt-tags" style={{ marginTop: 0, marginBottom: 20 }}>
+                  <span className="pt-tag">{p.tag}</span>
+                  <span className="pt-tag">Coming soon</span>
+                </div>
+                <h2 className="pt-h3" style={{ fontSize: 21 }}>
+                  {p.t}
+                </h2>
+                <p>{p.d}</p>
+              </article>
+            ))}
+          </div>
+          <p className="pt-center" style={{ marginTop: 48 }}>
+            <Link href="/clients" className="pt-btn pt-btn-ghost">
+              See our clients meanwhile <Arrow size={16} />
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      <CtaSection />
+    </PageShell>
   );
 }

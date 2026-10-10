@@ -1,204 +1,107 @@
-import Footer8 from "@/components/footers/Footer8";
-import Header9 from "@/components/headers/Header9";
-import Features from "@/components/homes/home-9/Features";
-import Service from "@/components/homes/home-9/Service";
-
-import { slickMultipages } from "@/data/menu";
-import Image from "next/image";
 import Link from "next/link";
+import PageShell from "@/components/site/PageShell";
+import Icon, { Arrow } from "@/components/site/Icon";
+import {
+  Breadcrumbs,
+  CtaSection,
+  FaqSection,
+  ModelsSection,
+  ProcessSection,
+} from "@/components/site/Sections";
+import { services } from "@/data/services";
 
 export const metadata = {
-  title: "Services",
+  title: "Software Development Services: Web, Mobile, AI & Consulting",
   description:
-    "Software engineering, technical architecture, UX/UI refinement, hiring frameworks and delivery consulting. See how Primo Techworks helps teams design, build and scale.",
+    "Web app development, iOS and Android apps, AI and automation, software architecture consulting, UX/UI design and engineering leadership, from one senior team.",
+  alternates: { canonical: "/services" },
 };
-const onePage = false;
-export default function SlickServicesPage() {
+
+const FAQS = [
+  {
+    q: "Can you handle a project end to end?",
+    a: "Yes. Most clients work with us from discovery through design, engineering, launch and ongoing improvement, so one team owns the whole product and nothing gets lost between agencies.",
+  },
+  {
+    q: "Can we hire you for just one part, like design or architecture?",
+    a: "Absolutely. You can engage us for a single service (a UX redesign, an architecture review, an AI feature) and expand later if it makes sense.",
+  },
+  {
+    q: "What does a typical engagement cost?",
+    a: "It depends on scope and team size. We share a clear estimate after a free discovery call, and offer fixed-price projects, monthly dedicated teams and advisory retainers.",
+  },
+  {
+    q: "Which industries do you work with?",
+    a: "We've built products for healthcare, workforce and staffing, fintech, productivity and local services, and our process works across industries because it starts with your users and goals.",
+  },
+];
+
+export default function ServicesPage() {
   return (
-    <>
-      <div className="theme-slick">
-        <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
-            <Header9 links={slickMultipages} />
-          </nav>
-          <main id="main">
-            <section
-              className="page-section bg-gradient-gray-light-1 bg-scroll overflow-hidden"
-              id="home"
-            >
-              {/* <!-- Background Shape --> */}
-              <div className="bg-shape-1 wow fadeIn">
-                <Image
-                  src="/assets/images/demo-fancy/bg-shape-1.svg"
-                  width={1443}
-                  height={844}
-                  alt=""
-                />
-              </div>
-              {/* <!-- End Background Shape --> */}
-
-              <div className="container position-relative pt-sm-40 text-center">
-                <div className="row">
-                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                    <h1 className="hs-title-10 mb-10 wow fadeInUp">
-                      Services
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section
-              className="page-section scrollSpysection"
-              id="services"
-            >
-              <div className="container position-relative">
-                <div className="row">
-                  {/* Left Column */}
-                  <div className="col-lg-5 mb-md-60 mb-sm-40">
-                    <h2 className="section-caption-slick mb-30 mb-sm-20">
-                      WHAT WE DO
-                    </h2>
-                    <h3 className="section-title mb-30">
-                      Crafted Digital Solutions  
-                    </h3>
-                    <p className="section-descr mb-50 mb-sm-40">
-                      We offer development services that combine clarity, craftsmanship, and strategic design. Our process turns intricate challenges into elegant, dependable solutions built for long‑term success.
-                    </p>
-                    <div className="local-scroll">
-                      <Link
-                        href="/contact"
-                        className="btn btn-mod btn-color btn-large btn-circle btn-hover-anim mb-xs-10"
-                      >
-                        <span>Request a Quote</span>
-                      </Link>
-                    </div>
-                  </div>
-                  {/* End Left Column */}
-                  {/* Right Column */}
-                  <Service />
-                  {/* End Right Column */}
-                </div>
-                <div className="page-section">
-                  <hr className="mt-0 mb-0" />
-                </div>
-                <div className="row mb-50 mb-sm-50">
-                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
-                    <h2 className="section-title-small mb-20">
-                      Why choose Primo Techworks?
-                    </h2>
-                    <p className="text-gray mb-0">
-                      We are committed to delivering high-quality solutions that meet our clients' needs and exceed their expectations with a focus on quality, innovation and continuous improvement.
-                    </p>
-                  </div>
-                </div>
-                {/* Features Grid */}
-                <Features />
-                {/* End Features Grid */}
-              </div>
-            </section>
-            <hr className="mt-0 mb-0" />
-            <section
-              className="page-section"
-            >
-              <div className="container position-relative">
-                <div className="row">
-                  {/* Images */}
-                  <div className="col-lg-7 d-flex align-items-start mb-md-60 mb-xs-30">
-                    <div className="call-action-2-images">
-                      <div
-                        className="call-action-2-image-1"
-                        data-rellax-y=""
-                        data-rellax-speed="0.5"
-                        data-rellax-percentage="0.7"
-                      >
-                        <Image
-                          width={386}
-                          height={400}
-                          src="/assets/images/primotechworks/hs-image-7.png"
-                          alt="Cloud servers connected to analytics, security and data storage"
-                          className="wow scaleOutIn"
-                          data-wow-duration="1.2s"
-                          data-wow-offset={255}
-                        />
-                      </div>
-                      <div className="call-action-2-image-2">
-                        <Image
-                          width={810}
-                          height={512}
-                          src="/assets/images/primotechworks/hs-image-2.png"
-                          alt="Team collaborating around a digital dashboard with security, cloud and AI elements"
-                          className="wow scaleOutIn"
-                          data-wow-duration="1.2s"
-                          data-wow-offset={134}
-                        />
-                      </div>
-                      <div
-                        className="call-action-2-image-3"
-                        data-rellax-y=""
-                        data-rellax-speed="-0.5"
-                        data-rellax-percentage="0.5"
-                      >
-                        <Image
-                          width={386}
-                          height={500}
-                          src="/assets/images/primotechworks/hs-image-8.png"
-                          alt="AI brain connected to data, analytics, security and cloud services"
-                          className="wow scaleOutIn"
-                          data-wow-duration="1.2s"
-                          data-wow-offset={0}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Images */}
-                  {/* Text */}
-                  <div className="col-lg-5 d-flex align-items-center">
-                    <div
-                      className="wow fadeInUp"
-                      data-wow-duration="1.2s"
-                      data-wow-offset="255"
-                    >
-                      <h2 className="section-caption-slick mb-30 mb-sm-20">
-                        How we work
-                      </h2>
-
-                      <h2 className="section-title mb-30">
-                        A thoughtful & experience-driven approach to building exceptional products
-                      </h2>
-
-                      <p className="text-gray">
-                        Our process is grounded in clarity, collaboration, and craftsmanship.
-                        We take the time to understand your goals, explore the problem from
-                        every angle, and design solutions that balance usability, performance,
-                        and long‑term scalability.
-                      </p>
-
-                      <p className="text-gray mb-0">
-                        From early discovery to final delivery, we work closely with your team
-                        to ensure every decision is intentional and every outcome is meaningful.
-                        The result is software that feels refined, reliable, and built to stand
-                        the test of time.
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Text */}
-                </div>
-              </div>
-            </section>
-          </main>
-          <footer className="page-section footer position-relative overflow-hidden pb-30">
-            <div className="bg-shape-4">
-              <Image
-                src="/assets/images/demo-slick/bg-shape-4.svg"
-                width={1600}
-                height={268}
-                alt=""
-              />
+    <PageShell>
+      <section className="pt-hero pt-hero-sub" aria-labelledby="services-hero">
+        <div className="pt-grid-bg" aria-hidden="true" />
+        <div className="pt-glow" style={{ top: -280, right: -160 }} aria-hidden="true" />
+        <div className="pt-container">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Services", href: "/services" },
+            ]}
+          />
+          <div style={{ maxWidth: 820 }}>
+            <div className="pt-eyebrow" data-reveal>
+              Services
             </div>
-            <Footer8 />
-          </footer>
+            <h1 className="pt-h1" id="services-hero" data-reveal style={{ "--d": "0.05s" }}>
+              Everything you need to design, build and scale <span className="pt-gradient-text">great software</span>
+            </h1>
+            <p className="pt-lead" data-reveal style={{ "--d": "0.1s", maxWidth: 640 }}>
+              Six disciplines, one senior team. Engage us for a single service or the whole
+              product lifecycle, from first idea to millions of users.
+            </p>
+          </div>
         </div>
-      </div>
-    </>
+      </section>
+
+      <section className="pt-section" style={{ paddingTop: 0 }}>
+        <div className="pt-container" style={{ display: "grid", gap: 20 }}>
+          {services.map((s, i) => (
+            <Link
+              href={`/services/${s.slug}`}
+              key={s.slug}
+              className="pt-card pt-service-row"
+              data-reveal
+              style={{ "--d": `${(i % 2) * 0.06}s` }}
+            >
+              <div className="pt-service-row-main">
+                <span className="pt-icon" style={{ marginBottom: 0 }}>
+                  <Icon name={s.icon} size={26} />
+                </span>
+                <div>
+                  <h2 className="pt-h3" style={{ fontSize: 26 }}>
+                    {s.title}
+                  </h2>
+                  <p>{s.intro}</p>
+                </div>
+              </div>
+              <ul className="pt-service-row-list">
+                {s.deliverables.slice(0, 4).map((d) => (
+                  <li key={d}>{d}</li>
+                ))}
+              </ul>
+              <span className="pt-round-arrow" aria-hidden="true">
+                <Icon name="arrow" size={18} />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <ProcessSection />
+      <ModelsSection />
+      <FaqSection faqs={FAQS} title="Services FAQ" />
+      <CtaSection title="Not sure which service you need?" lead="Tell us about the problem you're solving. We'll recommend the right approach, even if it's not us." />
+    </PageShell>
   );
 }
